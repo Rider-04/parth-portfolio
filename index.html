@@ -63,6 +63,7 @@ nav.scrolled{background:rgba(5,8,22,0.85);backdrop-filter:blur(20px);border-bott
 .nav-cta:hover{opacity:0.9;transform:translateY(-1px)}
 .nav-theme{background:none;border:1px solid var(--border);color:var(--text2);width:36px;height:36px;border-radius:8px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:16px;transition:all 0.2s;margin-left:12px}
 .nav-theme:hover{border-color:var(--cyan);color:var(--cyan)}
+.mobile-menu{display:none}
 .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
 .hamburger span{display:block;width:22px;height:1.5px;background:var(--text2);transition:all 0.3s}
 @media(max-width:768px){
@@ -600,7 +601,7 @@ body.light .section-title{color:#0f1526}
         </div>
       </div>
     </div>
-    @media(max-width:700px){.skills-bar-grid{grid-template-columns:1fr!important}}
+    <!--@media(max-width:700px){.skills-bar-grid{grid-template-columns:1fr!important}}-->
   </div>
 </section>
 
@@ -670,11 +671,7 @@ body.light .section-title{color:#0f1526}
             <span class="stack-badge">Data Modeling</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/Rider-04" target="_blank" class="proj-btn proj-btn-gh">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.343-3.369-1.343-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.138 20.165 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
-              GitHub
-            </a>
-            <a href="#" class="proj-btn proj-btn-live">↗ Live Demo</a>
+            <span class="proj-btn" style="opacity:0.5;cursor:default;pointer-events:none;">🔒 Private — Internship Project</span>
           </div>
         </div>
       </div>
@@ -703,11 +700,10 @@ body.light .section-title{color:#0f1526}
             <span class="stack-badge">Seaborn</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/Rider-04" target="_blank" class="proj-btn proj-btn-gh">
+            <a href="https://github.com/Rider-04/bank-loan-default-risk-analysis.git" target="_blank" class="proj-btn proj-btn-gh">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.343-3.369-1.343-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.138 20.165 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
               GitHub
             </a>
-            <a href="#" class="proj-btn proj-btn-live">↗ Live Demo</a>
           </div>
         </div>
       </div>
@@ -734,11 +730,10 @@ body.light .section-title{color:#0f1526}
             <span class="stack-badge">Excel</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/Rider-04" target="_blank" class="proj-btn proj-btn-gh">
+            <a href="https://github.com/Rider-04/formula1-data-analytics-dashboard.git" target="_blank" class="proj-btn proj-btn-gh">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.343-3.369-1.343-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.138 20.165 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
               GitHub
             </a>
-            <a href="#" class="proj-btn proj-btn-live">↗ Live Demo</a>
           </div>
         </div>
       </div>
@@ -766,11 +761,11 @@ body.light .section-title{color:#0f1526}
             <span class="stack-badge">MySQL</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/Rider-04" target="_blank" class="proj-btn proj-btn-gh">
+            <a href="https://github.com/Rider-04/flight-data-engineering-pipeline.git" target="_blank" class="proj-btn proj-btn-gh">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.343-3.369-1.343-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.138 20.165 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
               GitHub
             </a>
-            <a href="#" class="proj-btn proj-btn-live">↗ Live Demo</a>
+            
           </div>
         </div>
       </div>
@@ -866,19 +861,19 @@ body.light .section-title{color:#0f1526}
         <div style="font-size:20px;font-weight:700;letter-spacing:-0.5px;margin-bottom:24px">Send a Message</div>
         <div class="form-group">
           <label class="form-label">YOUR NAME</label>
-          <input type="text" class="form-input" placeholder="John Doe">
+          <input type="text" id="from_name" class="form-input" placeholder="John Doe">
         </div>
         <div class="form-group">
           <label class="form-label">EMAIL ADDRESS</label>
-          <input type="email" class="form-input" placeholder="john@company.com">
+          <input type="email" id="from_email" class="form-input" placeholder="john@company.com">
         </div>
         <div class="form-group">
           <label class="form-label">SUBJECT</label>
-          <input type="text" class="form-input" placeholder="Opportunity / Collaboration / Just saying hi">
+          <input type="text" id="subject" class="form-input" placeholder="Opportunity / Collaboration / Just saying hi">
         </div>
         <div class="form-group">
           <label class="form-label">MESSAGE</label>
-          <textarea class="form-input" rows="4" placeholder="Tell me about the opportunity..."></textarea>
+          <textarea id="message" class="form-input" rows="4" placeholder="Tell me about the opportunity..."></textarea>
         </div>
         <button class="form-submit" onclick="handleSubmit(this)">
           <span>Send Message</span>
@@ -1067,44 +1062,62 @@ const skillBarObs = new IntersectionObserver((entries)=>{
 document.querySelectorAll('#skills .reveal:last-child').forEach(el=>skillBarObs.observe(el));
 
 // CONTACT FORM
-function handleSubmit(btn){
+function handleSubmit(btn) {
+  const name    = document.getElementById('from_name').value.trim();
+  const email   = document.getElementById('from_email').value.trim();
+  const subject = document.getElementById('subject').value.trim();
+  const message = document.getElementById('message').value.trim();
 
-// ANIMATED COUNTERS
-function animateCounter(el, target, duration=1500){
-  let start=0, startTime=null;
-  function step(ts){
-    if(!startTime) startTime=ts;
-    const progress = Math.min((ts-startTime)/duration,1);
-    const ease = 1 - Math.pow(1-progress,3);
-    el.textContent = Math.floor(ease*target) + (el.dataset.suffix||'');
-    if(progress<1) requestAnimationFrame(step);
+  if (!name || !email || !message) {
+    alert('Please fill in all required fields.');
+    return;
   }
-  requestAnimationFrame(step);
-}
-const counterObs = new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){
-      const counters = e.target.querySelectorAll('[data-count]');
-      counters.forEach(c=>animateCounter(c, parseInt(c.dataset.count)));
-      counterObs.unobserve(e.target);
-    }
-  });
-},{threshold:0.5});
-document.querySelectorAll('.profile-card').forEach(c=>counterObs.observe(c));
+
   const orig = btn.innerHTML;
   btn.innerHTML = '<span>Sending...</span><span>⟳</span>';
-  btn.disabled=true;
-  setTimeout(()=>{
-    btn.innerHTML = '<span>Message Sent! ✓</span>';
-    btn.style.background='linear-gradient(135deg,#10b981,#059669)';
-    setTimeout(()=>{
-      btn.innerHTML=orig;
-      btn.disabled=false;
-      btn.style.background='';
-    },3000);
-  },1500);
-}
+  btn.disabled = true;
 
+  const SHEET_URL = 'https://script.google.com/macros/s/AKfycbzhtrSb2Eq5ORfNvyUjpuFsA7tS6ORHtG_5BbtwYVFKMxIrr0yD7sErJBpuM1LSq_I6/exec';
+
+  // Save to Google Sheets
+  fetch(SHEET_URL, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name, email, subject, message })
+  });
+
+  // Send email via EmailJS
+  emailjs.send('service_7mboe22', 'template_8ph28uj', {
+    from_name:  name,
+    from_email: email,
+    subject:    subject,
+    message:    message
+  })
+  .then(() => {
+    btn.innerHTML = '<span>Message Sent! ✓</span>';
+    btn.style.background = 'linear-gradient(135deg,#10b981,#059669)';
+    document.getElementById('from_name').value  = '';
+    document.getElementById('from_email').value = '';
+    document.getElementById('subject').value    = '';
+    document.getElementById('message').value    = '';
+    setTimeout(() => {
+      btn.innerHTML = orig;
+      btn.disabled  = false;
+      btn.style.background = '';
+    }, 3000);
+  })
+  .catch((err) => {
+    console.error('EmailJS error:', err);
+    btn.innerHTML = '<span>Failed. Try again.</span>';
+    btn.style.background = 'linear-gradient(135deg,#ef4444,#dc2626)';
+    setTimeout(() => {
+      btn.innerHTML = orig;
+      btn.disabled  = false;
+      btn.style.background = '';
+    }, 3000);
+  });
+}
 // MOUSE GLOW ON HERO
 const heroSection = document.getElementById('hero');
 const heroGlow = document.getElementById('heroGlow');
@@ -1114,5 +1127,7 @@ heroSection.addEventListener('mousemove',e=>{
   heroGlow.style.top = (e.clientY - r.top) + 'px';
 });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>emailjs.init('1z1Qf5n5m2Bhv6OR8');</script>
 </body>
 </html>
