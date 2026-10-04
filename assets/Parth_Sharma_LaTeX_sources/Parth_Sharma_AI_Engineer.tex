@@ -1,0 +1,105 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{url}
+\usepackage{parskip}
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[top=0.3in,bottom=0.25in,left=0.5in,right=0.5in]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\usepackage{titlesec}
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{2pt}
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\IfFileExists{fontawesome5.sty}{\usepackage{fontawesome5}}{%
+  \newcommand{\faGithub}{GitHub:}\newcommand{\faLinkedin}{LinkedIn:}\newcommand{\faEnvelope}{}%
+  \newcommand{\faMobile}{}\newcommand{\faGlobe}{}}
+\setlength{\parskip}{1pt}
+\renewcommand{\baselinestretch}{0.92}
+\renewcommand{\arraystretch}{1.0}
+
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[2pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=1pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}
+    }
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{PARTH SHARMA} \\[5pt]
+\href{https://github.com/Rider-04}{\raisebox{-0.05\height}\faGithub\ Rider-04} \ $|$ \
+\href{https://www.linkedin.com/in/parthsharma-dsxpert}{\raisebox{-0.05\height}\faLinkedin\ parthsharma-dsxpert} \ $|$ \
+\href{mailto:sharmaparthsharma04@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ sharmaparthsharma04@gmail.com} \ $|$ \
+\href{tel:+917067837303}{\raisebox{-0.05\height}\faMobile \ +91-7067837303} \ $|$ \
+\href{https://parth-portfolio-virid.vercel.app/}{\raisebox{-0.05\height}\faGlobe \ Portfolio}
+\end{tabularx}
+
+\section{Summary}
+\textbf{AI Engineer} (B.Tech, Artificial Intelligence \& Data Science) with hands-on experience in \textbf{machine learning, GenAI, RAG, APIs, and deployment}. Pairs AI skills with a strong data-engineering base: SQL, ETL pipelines, feature engineering, and data validation on 500K+ records across banking, aviation, and academic domains. Comfortable taking work from clean data to trained models to API-served applications, and presenting results to non-technical stakeholders.
+
+\section{Experience}
+\begin{joblong}{Data Analytics Intern | Decode Data Academy}{July 2025 -- Present}
+\item Built \textbf{ETL/data-preparation pipelines} in MySQL and SQL to ingest, clean, and standardize 10,000+ records across 5+ branches and 2 colleges, eliminating 95\%+ of data errors, providing reliable inputs for analytics and ML use cases.
+\item Designed normalized relational databases, 10--15 SQL views, and 4--5 star-schema tables to support scalable, high-performance analytics.
+\item Integrated a Pentaho Spoon ETL layer into existing SQL workflows, improving data-processing efficiency by 20--30\% and reducing manual effort.
+\item Delivered 6 Power BI dashboards (10+ KPI cards) using SQL and DAX to communicate data insights to non-technical stakeholders.
+\item Worked in a 6-member analytics team as the sole intern, translating stakeholder requirements into schemas, KPIs, and data-driven reporting.
+\item Validated data quality and business rules across 1,000+ records, a foundation for trustworthy model inputs.
+\end{joblong}
+
+\section{Projects}
+\textbf{Loan Default Risk Prediction \& Feature Engineering} \textit{(Self-Directed)} \hfill \href{https://github.com/Rider-04/bank-loan-default-risk-analysis}{GitHub} \\
+\textit{Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn}
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=1pt,label=--]
+\item Built an end-to-end \textbf{ML pipeline} on a 55K-row, 122-column loan dataset: missing-value and outlier handling, encoding, and model-ready data preparation.
+\item Engineered \textbf{10+ predictive features} (income segmentation, credit ratio, EMI burden, employment duration) to improve customer risk profiling.
+\item Trained and compared \textbf{Logistic Regression, Decision Tree, and Gradient Boosting} classifiers to predict loan default risk; evaluated with standard classification metrics.
+\item Translated model and EDA outputs into KPI visualizations on default patterns, repayment behavior, and credit affordability.
+\end{itemize}
+\vspace{2pt}
+\textbf{Flight Data Engineering Pipeline} \hfill \href{https://github.com/Rider-04/flight-data-engineering-pipeline.git}{GitHub} \\
+\textit{Pentaho Spoon, MySQL, Power BI}
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=1pt,label=--]
+\item Built an end-to-end \textbf{data pipeline} (Pentaho Spoon, MySQL) processing 445K+ flight records into an analytics-ready fact table (455K rows $\rightarrow$ 6.5K, $\sim$98\% reduction), the kind of feature-ready data layer ML workloads depend on.
+\item Modeled star-schema tables and SQL views feeding 4 Power BI dashboards on airline delays, airport performance, and carrier efficiency.
+\end{itemize}
+\vspace{2pt}
+
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+2022 - 2026 & Bachelor of Technology (Artificial Intelligence and Data Science) at \textbf{Lakshmi Narain College of Technology, Bhopal, Madhya Pradesh, India} \\
+\end{tabularx}
+
+\section{Technical Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Programming:} & Python, SQL \\
+\textbf{AI \& GenAI:} & Machine Learning, Generative AI, LLMs, Retrieval-Augmented Generation (RAG) \\
+\textbf{Machine Learning:} & Feature Engineering, Classification (Logistic Regression, Decision Trees, Gradient Boosting), Model Evaluation \\
+\textbf{APIs \& Deployment:} & FastAPI, REST APIs, Model Deployment \\
+\textbf{Libraries:} & Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn \\
+\textbf{Data Engineering:} & ETL Pipelines, Pentaho Spoon, Data Validation, Star Schema \\
+\textbf{Databases:} & MySQL, Relational Databases \\
+\textbf{Tools:} & Git, Jupyter Notebook, Power BI \\
+\textbf{Coursework:} & Machine Learning, DBMS, Statistics, Data Structures and Algorithms \\
+\end{tabularx}
+
+\section{Certifications}
+\begin{itemize}[leftmargin=1em, itemsep=1pt, label=--, nosep]
+    \item AWS Academy Data Engineering Badge \hfill Dec 2025
+    \item Wipro TalentNext Database Solutions Expert \hfill Oct 2024
+    \item HackerRank SQL -- 5-Star (Gold) Badge
+\end{itemize}
+
+\end{document}

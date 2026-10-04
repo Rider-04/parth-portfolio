@@ -1,0 +1,111 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{url}
+\usepackage{parskip}
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[top=0.3in,bottom=0.25in,left=0.5in,right=0.5in]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\usepackage{titlesec}
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{2pt}
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\IfFileExists{fontawesome5.sty}{\usepackage{fontawesome5}}{%
+  \newcommand{\faGithub}{GitHub:}\newcommand{\faLinkedin}{LinkedIn:}\newcommand{\faEnvelope}{}%
+  \newcommand{\faMobile}{}\newcommand{\faGlobe}{}}
+\setlength{\parskip}{1pt}
+\renewcommand{\baselinestretch}{0.92}
+\renewcommand{\arraystretch}{1.0}
+
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[2pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=1pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}
+    }
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{PARTH SHARMA} \\[5pt]
+\href{https://github.com/Rider-04}{\raisebox{-0.05\height}\faGithub\ Rider-04} \ $|$ \
+\href{https://www.linkedin.com/in/parthsharma-dsxpert}{\raisebox{-0.05\height}\faLinkedin\ parthsharma-dsxpert} \ $|$ \
+\href{mailto:sharmaparthsharma04@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ sharmaparthsharma04@gmail.com} \ $|$ \
+\href{tel:+917067837303}{\raisebox{-0.05\height}\faMobile \ +91-7067837303} \ $|$ \
+\href{https://parth-portfolio-virid.vercel.app/}{\raisebox{-0.05\height}\faGlobe \ Portfolio}
+\end{tabularx}
+
+\section{Summary}
+\textbf{Data Engineer} (B.Tech, Artificial Intelligence \& Data Science) with an \textbf{AWS Academy Data Engineering} badge and hands-on experience building end-to-end \textbf{ETL pipelines}, relational and star-schema data models, and Python-based data workflows on 500K+ records across banking, aviation, and academic domains. Strong SQL and data-warehousing foundation; comfortable with APIs, batch processing, data validation, and delivering pipeline outputs to BI and ML consumers. Currently upskilling in PySpark and Databricks.
+
+\section{Experience}
+\begin{joblong}{Data Analytics Intern | Decode Data Academy}{July 2025 -- Present}
+\item Designed and engineered \textbf{ETL data pipeline} workflows using MySQL and SQL to ingest, clean, transform, and standardize 10,000+ student records across 5+ branches and 2 colleges, eliminating 95\%+ of data errors.
+\item Designed normalized relational databases, 10--15 SQL views, and 4--5 \textbf{star-schema} fact/dimension tables to support scalable downstream reporting and analytics.
+\item Deployed a \textbf{Pentaho Spoon} ETL layer into existing SQL reporting workflows, improving data-processing efficiency by 20--30\% and reducing manual pipeline maintenance.
+\item Built 6 interactive Power BI dashboards (10+ KPI cards) with SQL and DAX, consuming pipeline outputs, refreshed weekly for teachers and administrators.
+\item Collaborated within a 6-member analytics team as the sole intern, defining schemas/KPIs and delivering pipeline-backed reporting.
+\item Performed data validation, QA, and business-rule verification across 1,000+ records for consistent, pipeline-ready outputs.
+\end{joblong}
+
+\section{Projects}
+\textbf{Flight Data Engineering Pipeline} \hfill \href{https://github.com/Rider-04/flight-data-engineering-pipeline.git}{GitHub} \\
+\textit{Pentaho Spoon, MySQL, Power BI}
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=1pt,label=--]
+\item Designed and built an end-to-end \textbf{ETL pipeline} (Pentaho Spoon, MySQL) processing 445K+ raw flight records (375K+ flights, 283 cities, 3,663 routes) in a 4--5 minute run.
+\item Aggregated 455K raw rows into a 6.5K-row analytics-ready fact table ($\sim$98\% data reduction), significantly boosting downstream query and dashboard performance.
+\item Built SQL views and \textbf{star-schema} data models feeding 4 Power BI dashboards on airline delays, airport performance, and carrier efficiency.
+\end{itemize}
+\vspace{2pt}
+\textbf{Loan Default Risk Prediction \& Feature Engineering} \textit{(Self-Directed)} \hfill \href{https://github.com/Rider-04/bank-loan-default-risk-analysis}{GitHub} \\
+\textit{Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn}
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=1pt,label=--]
+\item Built a data-cleaning and feature-engineering pipeline on a 55K-row, 122-column loan dataset, handling missing values and outliers to prepare model-ready data.
+\item Engineered \textbf{10+ features} (income segmentation, credit ratio, EMI burden, employment duration) for downstream modeling.
+\item Experimented with Logistic Regression, Decision Tree, and Gradient Boosting classifiers on the engineered features to predict default risk.
+\end{itemize}
+\vspace{2pt}
+\textbf{Student Performance \& Contest Analytics Dashboard} \textit{(Internship)} \hfill \href{https://app.powerbi.com/links/q7Z6OSaJ-t?ctid=0d11b6ec-52ac-4a84-9442-43048f433ac9&pbi_source=linkShare}{Live Dashboard} \\
+\textit{Power BI, SQL, DAX, MySQL}
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=1pt,label=--]
+\item Integrated 5+ datasets (1,000+ students, 5+ branches, 2 colleges) via MySQL, SQL, and Power BI; built DAX measures and 10+ KPI cards with drill-through reports for automated weekly reporting.
+\end{itemize}
+\vspace{2pt}
+
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+2022 - 2026 & Bachelor of Technology (Artificial Intelligence and Data Science) at \textbf{Lakshmi Narain College of Technology, Bhopal, Madhya Pradesh, India} \\
+\end{tabularx}
+
+\section{Technical Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Programming:} & Python, SQL, DAX \\
+\textbf{Data Engineering:} & ETL Pipelines, Pentaho Spoon, Data Pipeline Development, Batch Processing, Data Integration, Data Transformation, Data Validation, Data Warehousing, APIs \\
+\textbf{Data Modeling:} & Star Schema, Fact \& Dimension Modeling, Relational Database Design, Normalization \\
+\textbf{Machine Learning:} & Feature Engineering, Classification (Logistic Regression, Decision Trees, Gradient Boosting) \\
+\textbf{Databases:} & MySQL, Relational Databases \\
+\textbf{Business Intelligence:} & Power BI, Dashboard Development, KPI Reporting \\
+\textbf{Libraries:} & Pandas, NumPy, Scikit-learn \\
+\textbf{Tools:} & Microsoft Excel, Git, Jupyter Notebook \\
+\textbf{Currently Upskilling:} & PySpark, Databricks \\
+\end{tabularx}
+
+\section{Certifications}
+\begin{itemize}[leftmargin=1em, itemsep=1pt, label=--, nosep]
+    \item AWS Academy Data Engineering Badge \hfill Dec 2025
+    \item Wipro TalentNext Database Solutions Expert \hfill Oct 2024
+    \item HackerRank SQL -- 5-Star (Gold) Badge
+\end{itemize}
+
+\end{document}
