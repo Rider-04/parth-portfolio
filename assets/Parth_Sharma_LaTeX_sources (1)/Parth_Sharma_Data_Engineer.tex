@@ -1,0 +1,173 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{url}
+\usepackage{parskip}
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{multirow}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+
+%for social icons
+\usepackage{fontawesome5}
+
+\newcommand{\rupee}{Rs.\,}
+
+% job listing environments
+\newenvironment{jobshort}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    }
+    {
+    }
+
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}
+    }
+
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{PARTH SHARMA} \\[7.5pt]
+\href{https://github.com/Rider-04}{\raisebox{-0.05\height}\faGithub\ Rider-04} \ $|$ \
+\href{https://www.linkedin.com/in/parthsharma-dsxpert}{\raisebox{-0.05\height}\faLinkedin\ parthsharma-dsxpert} \ $|$ \
+\href{mailto:sharmaparthsharma04@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ sharmaparthsharma04@gmail.com} \ $|$ \
+\href{tel:+917067837303}{\raisebox{-0.05\height}\faMobile \ +91-7067837303} \ $|$ \
+\href{https://parth-portfolio-virid.vercel.app/}{\raisebox{-0.05\height}\faGlobe \ Portfolio}\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% SUMMARY
+%----------------------------------------------------------------------------------------
+
+\section{Summary}
+\textbf{Data Engineer} (B.Tech, Artificial Intelligence \& Data Science) with an \textbf{AWS Academy Data Engineering} badge and hands-on experience building end-to-end \textbf{ETL pipelines}, relational and star-schema data models, and Python-based data workflows on 500K+ records across banking, aviation, and academic domains. Strong SQL and data-warehousing foundation; comfortable with APIs, batch processing, data validation, and delivering pipeline outputs to BI and ML consumers. Currently upskilling in PySpark and Databricks.
+
+\section{Experience}
+
+\begin{joblong}{Data Engineer Intern | Decode Data Academy}{July 2025 -- Present}
+\item Designed and engineered \textbf{ETL data pipeline} workflows using MySQL and SQL to ingest, clean, transform, and standardize 10,000+ student records across 5+ branches and 2 colleges, eliminating 95\%+ of data errors.
+\item Designed normalized relational databases, 10--15 SQL views, and 4--5 \textbf{star-schema} fact/dimension tables to support scalable downstream reporting and analytics.
+\item Deployed a \textbf{Pentaho Spoon} ETL layer into existing SQL reporting workflows, improving data-processing efficiency by 20--30\% and reducing manual pipeline maintenance.
+\item Performed data validation, QA, and business-rule verification across 1,000+ records for consistent, pipeline-ready outputs.
+\item Served pipeline outputs to 6 Power BI dashboards (10+ KPI cards), refreshed weekly.
+\item Collaborated within a 6-member analytics team as the sole intern, defining schemas and delivering pipeline-backed reporting.
+\vspace{10pt}
+\end{joblong}
+
+\section{Projects}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Flight Data Engineering Pipeline} \normalsize{(\href{https://github.com/Rider-04/flight-data-engineering-pipeline.git}{GitHub})} & \hfill \normalsize{Pentaho, MySQL, Power BI} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+\item Designed and built an end-to-end \textbf{ETL pipeline} (Pentaho Spoon, MySQL) processing 445K+ raw flight records (375K+ flights, 283 cities, 3,663 routes) in a 4--5 minute run.
+\item Aggregated 455K raw rows into a 6.5K-row analytics-ready fact table ($\sim$98\% data reduction), significantly boosting downstream query and dashboard performance.
+\item Built SQL views and \textbf{star-schema} data models feeding 4 Power BI dashboards on airline delays, airport performance, and carrier efficiency.
+\end{itemize}
+} \\
+\end{tabularx}
+
+\vspace{10pt}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Cab \& Auto Fare Prediction} \normalsize{(\href{https://github.com/Rider-04/cab_bike_auto_fare_prediction}{GitHub})} & \hfill \normalsize{Python, PyTorch, Pandas} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+\item Consolidated \textbf{7 independently collected ride datasets} (465K+ raw records) into one standardized schema using Python and Pandas; reproducible via separate Kaggle-API ingestion, merging, and preprocessing notebooks.
+\item Removed 1,270 rate-card rows and 7,329 duplicates, unified 11 overlapping payment labels into 4, parsed mixed date formats, imputed missing values with flags, and encoded $\sim$12.8K-cardinality locations as log-frequency features; asserted no NaN/inf in the final 376K-row table.
+\end{itemize}
+} \\
+\end{tabularx}
+
+\vspace{10pt}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Student Analytics Dashboard} \normalsize{(\href{https://app.powerbi.com/links/q7Z6OSaJ-t?ctid=0d11b6ec-52ac-4a84-9442-43048f433ac9&pbi_source=linkShare}{Live})} & \hfill \normalsize{Power BI, SQL, DAX} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+\item Integrated 5+ datasets (1,000+ students, 5+ branches, 2 colleges) via MySQL, SQL, and Power BI; built DAX measures and 10+ KPI cards with drill-through reports for automated weekly reporting.
+\end{itemize}
+} \\
+\end{tabularx}
+
+\vspace{10pt}
+
+
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+2022 - 2026 & Bachelor of Technology (Artificial Intelligence and Data Science) at \textbf{Lakshmi Narain College of Technology, Bhopal, Madhya Pradesh, India} \hfill  \\[12pt]
+2020 - 2021 & Higher Secondary Education (Class XII) at \textbf{Manikala Nahar Higher Secondary School} \hfill  \\[12pt]
+2018 - 2019 & Secondary Education (Class X) at \textbf{Shri Maniklal Nahar International School} \hfill  \\
+\end{tabularx}
+
+\section{Technical Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Programming:} & \normalsize{Python, SQL, DAX}\\
+\textbf{Data Engineering:} & \normalsize{ETL Pipelines, Pentaho Spoon, Data Pipeline Development, Batch Processing, Data Integration, Data Transformation, Data Validation, Data Warehousing, APIs}\\
+\textbf{Data Modeling:} & \normalsize{Star Schema, Fact \& Dimension Modeling, Relational Database Design, Normalization}\\
+\textbf{Machine Learning:} & \normalsize{Feature Engineering, Classification (Logistic Regression, Decision Trees, Gradient Boosting)}\\
+\textbf{Databases:} & \normalsize{MySQL, Relational Databases}\\
+\textbf{Business Intelligence:} & \normalsize{Power BI, Dashboard Development, KPI Reporting}\\
+\textbf{Libraries:} & \normalsize{Pandas, NumPy, Scikit-learn, PyTorch}\\
+\textbf{Tools:} & \normalsize{Microsoft Excel, Git, Jupyter Notebook}\\
+\textbf{Currently Upskilling:} & \normalsize{PySpark, Databricks}\\
+
+\end{tabularx}
+
+
+\section{Certifications}
+
+\begin{itemize}[leftmargin=1em, itemsep=10pt, label=--]
+    \item AWS Academy Data Engineering Badge \hfill Dec 2025
+    \item Wipro TalentNext Database Solutions Expert \hfill Oct 2024
+    \item HackerRank SQL -- 5-Star (Gold) Badge
+\end{itemize}
+
+
+\vfill
+\center
+
+\end{document}

@@ -3,24 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Parth Sharma — AI/ML & Data Engineer (B.Tech AI & Data Science, 2026). I build ML models, data pipelines and BI dashboards with Python, SQL, scikit-learn, FastAPI and Power BI. Open to work, Bhopal, India.">
-<meta name="keywords" content="Parth Sharma, AI/ML Engineer, Machine Learning, Data Scientist, Data Engineer, BI Developer, GenAI, Python, SQL, scikit-learn, FastAPI, Power BI">
-<meta name="theme-color" content="#02040e">
-<link rel="canonical" href="https://YOUR-DOMAIN/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2302040e'/%3E%3Ctext x='32' y='44' font-size='30' font-weight='800' text-anchor='middle' fill='%2322d3ee' font-family='sans-serif'%3EPS%3C/text%3E%3C/svg%3E">
-<meta property="og:title" content="Parth Sharma — AI/ML & Data Engineer">
-<meta property="og:description" content="I build ML models, data pipelines and BI dashboards with Python, SQL, scikit-learn, FastAPI and Power BI. Open to AI/ML, data and BI roles.">
+<meta name="description" content="Parth Sharma — Data Analyst, Business Intelligence Developer & AI Solutions Engineer. SQL, Python, Power BI, Tableau, ETL.">
+<meta name="keywords" content="Parth Sharma, Data Analyst, Business Intelligence, Power BI, Tableau, SQL, Python, ETL, AI Solutions">
+<meta property="og:title" content="Parth Sharma — Data Analyst · BI Developer · Building AI Solutions">
+<meta property="og:description" content="Data Analyst & BI Developer building intelligent data applications. SQL · Python · Power BI · Tableau · ETL · AI Solutions.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://YOUR-DOMAIN/">
-<meta property="og:image" content="https://YOUR-DOMAIN/assets/og-image.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Parth Sharma — AI/ML & Data Engineer">
-<meta name="twitter:description" content="I build ML models, data pipelines and BI dashboards with Python, SQL, scikit-learn, FastAPI and Power BI.">
-<meta name="twitter:image" content="https://YOUR-DOMAIN/assets/og-image.png">
-<title>Parth Sharma — AI/ML & Data Engineer</title>
+<title>Parth Sharma — Data Analyst · BI Developer · Building AI Solutions</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&family=Outfit:wght@700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 /* ─── RESET & TOKENS ─── */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -28,7 +18,7 @@
   --bg:#02040e;--bg2:#050917;--bg3:#07091f;
   --blue:#3b82f6;--cyan:#22d3ee;--purple:#a78bfa;--pink:#f472b6;
   --green:#34d399;--amber:#fbbf24;--indigo:#6366f1;--electric:#60a5fa;
-  --text:#eef2ff;--text2:#8892b0;--text3:#6f81a3;
+  --text:#eef2ff;--text2:#8892b0;--text3:#3d4f6e;
   --border:rgba(100,120,200,0.08);--border2:rgba(96,165,250,0.2);--border3:rgba(96,165,250,0.4);
   --glass:rgba(255,255,255,0.028);--glass2:rgba(255,255,255,0.055);--glass3:rgba(255,255,255,0.09);
   --font:'Space Grotesk',sans-serif;--display:'Outfit',sans-serif;--mono:'DM Mono',monospace;
@@ -294,8 +284,8 @@ section{padding:130px 56px;position:relative}
 /* ─── SKILLS ─── */
 #skills{}
 #skills::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 60% at 15% 50%,rgba(167,139,250,.04),transparent);pointer-events:none}
-.skills-layout{margin-top:72px}
-.skill-cats{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.skills-layout{display:grid;grid-template-columns:1fr 440px;gap:56px;margin-top:72px;align-items:start}
+.skill-cats{display:flex;flex-direction:column;gap:16px}
 .skcat{background:var(--glass);border:1px solid var(--border);border-radius:var(--r2);padding:26px;transition:all .3s;position:relative;overflow:hidden}
 .skcat::before{content:'';position:absolute;top:0;left:0;right:0;height:1.5px;background:var(--cg,linear-gradient(90deg,var(--blue),var(--cyan)));opacity:0;transition:opacity .3s}
 .skcat:hover{border-color:var(--border2);transform:translateX(5px)}.skcat:hover::before{opacity:1}
@@ -306,6 +296,29 @@ section{padding:130px 56px;position:relative}
 .sktags{display:flex;flex-wrap:wrap;gap:7px}
 .sktag{background:rgba(255,255,255,.028);border:1px solid var(--border);border-radius:8px;padding:6px 12px;font-size:12.5px;color:var(--text2);font-family:var(--mono);transition:all .2s;cursor:default}
 .sktag:hover{background:rgba(59,130,246,.09);border-color:rgba(59,130,246,.26);color:var(--electric);transform:translateY(-2px)}
+/* Bars panel */
+.skills-panel{background:var(--glass);border:1px solid var(--border);border-radius:var(--r2);padding:38px;position:sticky;top:100px}
+.sp-title{font-family:var(--mono);font-size:11px;color:var(--cyan);letter-spacing:2px;text-transform:uppercase;margin-bottom:24px}
+.sbar{margin-bottom:20px}
+.sbar-meta{display:flex;justify-content:space-between;margin-bottom:7px}
+.sbar-name{font-size:13.5px;font-weight:500}
+.sbar-pct{font-size:12px;font-family:var(--mono);color:var(--cyan)}
+.sbar-track{height:5px;background:rgba(255,255,255,.05);border-radius:100px;overflow:visible;position:relative}
+.sbar-fill{height:100%;border-radius:100px;width:0;transition:width 1.4s var(--ease);position:relative}
+.sbar-fill::after{content:'';position:absolute;right:-1px;top:-4px;width:13px;height:13px;border-radius:50%;background:inherit;box-shadow:0 0 10px rgba(96,165,250,.5);border:2px solid var(--bg)}
+.f1{background:linear-gradient(90deg,#3b82f6,#22d3ee);--w:92%}
+.f2{background:linear-gradient(90deg,#6366f1,#3b82f6);--w:88%}
+.f3{background:linear-gradient(90deg,#3b82f6,#6366f1);--w:85%}
+.f4{background:linear-gradient(90deg,#a78bfa,#6366f1);--w:82%}
+.f5{background:linear-gradient(90deg,#22d3ee,#34d399);--w:80%}
+.f6{background:linear-gradient(90deg,#34d399,#22d3ee);--w:78%}
+.f7{background:linear-gradient(90deg,#f472b6,#a78bfa);--w:75%}
+.sbar-fill.go{width:var(--w)}
+.sp-learning{margin-top:28px;padding-top:24px;border-top:1px solid var(--border)}
+.sp-learn-item{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--text2);padding:8px 0}
+.sp-learn-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+@media(max-width:1100px){.skills-layout{grid-template-columns:1fr}.skills-panel{position:relative;top:auto}}
+
 /* ─── EXPERIENCE ─── */
 #experience{background:var(--bg2)}
 #experience::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 60% at 50% -5%,rgba(59,130,246,.05),transparent);pointer-events:none}
@@ -392,7 +405,7 @@ section{padding:130px 56px;position:relative}
 
 /* ─── CERTIFICATIONS ─── */
 #certifications{background:var(--bg2)}
-.certs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:72px}
+.certs-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:72px}
 .ccard{background:var(--glass);border:1px solid var(--border);border-radius:var(--r2);padding:36px;transition:all .3s;position:relative;overflow:hidden}
 .ccard::before{content:'';position:absolute;top:0;left:0;right:0;height:1.5px;background:var(--cg,linear-gradient(90deg,transparent,var(--blue),transparent));opacity:0;transition:opacity .3s}
 .ccard:hover{border-color:var(--border2);transform:translateY(-5px)}.ccard:hover::before{opacity:1}
@@ -403,7 +416,7 @@ section{padding:130px 56px;position:relative}
 .ccard-issuer{font-family:var(--mono);font-size:11px;color:var(--text3);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:4px}
 .ccard-name{font-size:19px;font-weight:700;letter-spacing:-.4px;line-height:1.25}
 .ccard-desc{font-size:13.5px;color:var(--text2);line-height:1.68;font-weight:300}
-@media(max-width:1000px){.certs-grid{grid-template-columns:1fr}}
+@media(max-width:700px){.certs-grid{grid-template-columns:1fr}}
 
 /* ─── ACHIEVEMENTS ─── */
 
@@ -456,7 +469,7 @@ footer{padding:44px 56px;background:var(--bg);border-top:1px solid var(--border)
 .fsoc svg{width:15px;height:15px}
 
 /* ─── LIGHT THEME ─── */
-body.light{--bg:#f4f7ff;--bg2:#edf1ff;--bg3:#e6ecfe;--text:#0a0f24;--text2:#4a5568;--text3:#566579;--border:rgba(0,10,50,.07);--border2:rgba(59,130,246,.22);--border3:rgba(59,130,246,.42);--glass:rgba(255,255,255,.7);--glass2:rgba(255,255,255,.86);--glass3:rgba(255,255,255,.96)}
+body.light{--bg:#f4f7ff;--bg2:#edf1ff;--bg3:#e6ecfe;--text:#0a0f24;--text2:#4a5568;--text3:#94a3b8;--border:rgba(0,10,50,.07);--border2:rgba(59,130,246,.22);--border3:rgba(59,130,246,.42);--glass:rgba(255,255,255,.7);--glass2:rgba(255,255,255,.86);--glass3:rgba(255,255,255,.96)}
 body.light .h-name-grad{background:linear-gradient(150deg,#0a0f24 0%,#1e3a5f 45%,#1d4ed8 75%,#0ea5e9 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 body.light nav.scrolled{background:rgba(244,247,255,.92)}
 body.light .pthumb-bg.pt1{background:linear-gradient(135deg,#dbeafe,#bfdbfe)}
@@ -503,6 +516,17 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9990;o
 .quote-attr{font-family:var(--mono);font-size:13px;color:var(--text3);letter-spacing:1px}
 .quote-line{width:48px;height:1px;background:linear-gradient(90deg,var(--blue),var(--cyan));margin:20px auto}
 
+/* ─── SKILLS RADAR SVG ─── */
+.radar-wrap{display:flex;flex-direction:column;align-items:center;margin-top:40px;padding:32px;background:var(--glass);border:1px solid var(--border);border-radius:var(--r2)}
+.radar-title{font-family:var(--mono);font-size:11px;color:var(--cyan);letter-spacing:2px;text-transform:uppercase;margin-bottom:24px}
+#radarSvg{width:100%;max-width:340px;height:auto;overflow:visible}
+.radar-label{font-family:var(--mono);font-size:11px;fill:var(--text3)}
+.radar-polygon{fill:rgba(59,130,246,.12);stroke:rgba(96,165,250,.6);stroke-width:1.5;transition:all .4s}
+.radar-wrap:hover .radar-polygon{fill:rgba(59,130,246,.18);stroke:rgba(34,211,238,.8)}
+.radar-grid{fill:none;stroke:rgba(255,255,255,.05);stroke-width:1}
+.radar-axis{stroke:rgba(255,255,255,.06);stroke-width:1}
+.radar-dot{fill:var(--cyan);r:4;filter:drop-shadow(0 0 4px var(--cyan))}
+
 /* ─── FOOTER ENHANCEMENTS ─── */
 .foot-divider{height:1px;background:linear-gradient(90deg,transparent,rgba(96,165,250,.2),rgba(167,139,250,.15),transparent);max-width:1300px;margin:0 auto 40px}
 .foot-links{display:flex;gap:28px;list-style:none;flex-wrap:wrap}
@@ -534,6 +558,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9990;o
 .pre-fill{height:100%;background:linear-gradient(90deg,var(--blue),var(--cyan));border-radius:100px;width:0;transition:width .05s linear}
 .pre-text{font-family:var(--mono);font-size:12px;color:var(--text3);letter-spacing:2px}
 
+@media(min-width:1400px){#sparklineWrap{display:block!important}}
 
 /* ─── RESPONSIVE ─── */
 @media(max-width:768px){
@@ -549,55 +574,9 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9990;o
   .ach-card{padding:44px 28px}
   .exp-card{padding:28px 22px}
 }
-
-/* ─── UPDATE: ACCESSIBILITY ─── */
-.skip{position:absolute;left:-9999px;top:8px;background:var(--cyan);color:#02040e;padding:10px 18px;border-radius:8px;font-weight:600;text-decoration:none;z-index:10001}
-.skip:focus{left:8px}
-main:focus{outline:none}
-:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:4px}
-.fg input:focus-visible,.fg textarea:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
-.modal-overlay{visibility:hidden;transition:opacity .3s,visibility .3s}
-.modal-overlay.open{visibility:visible}
-.pcard:focus-visible{outline-offset:4px;border-radius:var(--r2)}
-/* ─── UPDATE: SKILLS ─── */
-.sktag .sk-learn{font-style:normal;font-size:10px;color:var(--amber);border:1px solid rgba(251,191,36,.3);border-radius:99px;padding:1px 7px;margin-left:6px}
-body.light .sk-learn{color:#92400e;border-color:rgba(146,64,14,.4)}
-@media(max-width:1000px){.skill-cats{grid-template-columns:1fr}}
-.cci-g{background:linear-gradient(135deg,rgba(52,211,153,.14),rgba(34,211,238,.1));border:1px solid rgba(52,211,153,.2)}
-/* ─── UPDATE: RESUME DROPDOWN ─── */
-.h-btns{position:relative;z-index:5}
-.rdd{position:relative;display:inline-block}
-.rdd-btn{font-family:var(--font);cursor:pointer}
-button.btn-g.rdd-btn,button.csoc.rdd-btn{font-family:var(--font)}
-.nav-res{background:none;border:1px solid var(--border);color:var(--text2);height:38px;padding:0 14px;border-radius:10px;font-size:13.5px;display:inline-flex;align-items:center;gap:6px;transition:all .2s}
-.nav-res:hover{border-color:var(--cyan);color:var(--cyan);background:var(--glass)}
-.rdd-menu{position:absolute;top:calc(100% + 8px);left:0;list-style:none;min-width:250px;background:var(--bg2);border:1px solid var(--border2);border-radius:12px;padding:6px;z-index:700;display:none;box-shadow:0 20px 60px rgba(0,0,0,.45);text-align:left}
-.rdd.rdd-r .rdd-menu{left:auto;right:0}
-.rdd.rdd-c .rdd-menu{left:50%;transform:translateX(-50%)}
-.rdd.open .rdd-menu{display:block}
-.rdd-menu a{display:flex;justify-content:space-between;gap:14px;padding:9px 12px;border-radius:8px;color:var(--text2);text-decoration:none;font-size:13.5px}
-.rdd-menu a:hover,.rdd-menu a:focus-visible{background:var(--glass2);color:var(--cyan)}
-.rdd-menu .def{font-family:var(--mono);font-size:10.5px;color:var(--cyan)}
-body.light .rdd-menu .def{color:#0369a1}
-@media(max-width:600px){.nav-res-wrap{display:none}}
-/* ─── UPDATE: FORM ─── */
-.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
-.form-status{min-height:20px;margin-top:14px;font-size:13.5px;font-family:var(--mono)}
-.form-status.ok{color:var(--green)}.form-status.err{color:#f87171}
-body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c1c}
-.csubmit:disabled{opacity:.75;cursor:not-allowed;transform:none}
-/* ─── UPDATE: REDUCED MOTION ─── */
-@media (prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation:none!important;transition:none!important}
-  html{scroll-behavior:auto}
-  #hpc,.h-mouse-glow{display:none}
-  .pcard:hover{transform:none}
-  .ticker-inner{width:auto;flex-wrap:wrap;justify-content:center}
-}
 </style>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
 
 <!-- PRELOADER -->
 <div id="preloader">
@@ -616,7 +595,7 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
   <div class="si-dot" data-section="experience"    data-label="Experience"></div>
   <div class="si-dot" data-section="projects"      data-label="Projects"></div>
   <div class="si-dot" data-section="learning"      data-label="Learning Roadmap"></div>
-  <div class="si-dot" data-section="upcoming"      data-label="Building Next"></div>
+  <div class="si-dot" data-section="upcoming"      data-label="AI Projects"></div>
   <div class="si-dot" data-section="certifications"data-label="Certifications"></div>
   <div class="si-dot" data-section="philosophy"    data-label="Philosophy"></div>
   <div class="si-dot" data-section="contact"       data-label="Contact"></div>
@@ -626,7 +605,7 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
 <div id="cur"></div>
 <div id="ring"></div>
 <div id="prog"></div>
-<button id="btt" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
 <!-- NAV -->
 <nav id="nav">
@@ -638,34 +617,32 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#learning">Learning</a></li>
-      <li><a href="#upcoming">Building Next</a></li>
+      <li><a href="#upcoming">AI Projects</a></li>
       <li><a href="#certifications">Certifications</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="nav-right">
-      <button class="theme-btn" id="themeBtn" title="Toggle theme" aria-label="Toggle light or dark theme">☀️</button>
-      <span class="nav-res-wrap"><div class="rdd rdd-r"><button type="button" class="rdd-btn nav-res" aria-haspopup="true" aria-expanded="false">Resume ▾</button><ul class="rdd-menu" role="menu"><li><a role="menuitem" href="assets/resume/Parth_Sharma_AI_ML_Engineer.pdf" download>AI/ML Engineer<span class=def>Default</span></a></li><li><a role="menuitem" href="assets/resume/Parth_Sharma_GenAI_LLM_Engineer.pdf" download>GenAI / LLM Engineer</a></li><li><a role="menuitem" href="assets/resume/Parth_Sharma_Machine_Learning_Engineer.pdf" download>Machine Learning Engineer</a></li><li><a role="menuitem" href="assets/resume/Parth_Sharma_AI_Engineer.pdf" download>AI Engineer</a></li><li><a role="menuitem" href="assets/resume/Parth_Sharma_Data_Scientist.pdf" download>Data Scientist</a></li><li><a role="menuitem" href="assets/resume/Parth_Sharma_Data_Engineer.pdf" download>Data Engineer</a></li><li><a role="menuitem" href="assets/resume/Parth_Sharma_Data_Analyst.pdf" download>Data Analyst</a></li><li><a role="menuitem" href="assets/resume/Parth_Sharma_BI_Analyst.pdf" download>BI Analyst</a></li></ul></div></span>
+      <button class="theme-btn" id="themeBtn" title="Toggle theme">☀️</button>
       <a href="mailto:sharmaparthsharma04@gmail.com" class="nav-hire">Hire Me →</a>
-      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
     </div>
   </div>
 </nav>
 
 <!-- MOBILE MENU -->
 <div class="mob" id="mob">
-  <button class="mob-x" id="mobClose" aria-label="Close menu">✕</button>
+  <button class="mob-x" id="mobClose">✕</button>
   <a href="#about"          onclick="closeMob()" style="--i:0">About</a>
   <a href="#skills"         onclick="closeMob()" style="--i:1">Skills</a>
   <a href="#experience"     onclick="closeMob()" style="--i:2">Experience</a>
   <a href="#projects"       onclick="closeMob()" style="--i:3">Projects</a>
   <a href="#learning"       onclick="closeMob()" style="--i:4">Learning</a>
-  <a href="#upcoming"       onclick="closeMob()" style="--i:5">Building Next</a>
+  <a href="#upcoming"       onclick="closeMob()" style="--i:5">AI Projects</a>
   <a href="#certifications" onclick="closeMob()" style="--i:6">Certifications</a>
   <a href="#contact"        onclick="closeMob()" style="--i:7">Contact</a>
 </div>
 
 <!-- ═══════════════ HERO ═══════════════ -->
-<main id="main" tabindex="-1">
 <section id="hero">
   <div class="hero-bg">
     <div class="hblob hb1"></div><div class="hblob hb2"></div>
@@ -675,7 +652,7 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
     <div class="h-mouse-glow" id="hGlow"></div>
   </div>
   <div class="hero-inner">
-    <div class="h-badge"><div class="h-badge-dot"></div>Open to work &nbsp;·&nbsp; Bhopal, India &nbsp;·&nbsp; AI/ML &nbsp;·&nbsp; Data &nbsp;·&nbsp; BI roles</div>
+    <div class="h-badge"><div class="h-badge-dot"></div>Open to work &nbsp;·&nbsp; Bhopal, India &nbsp;·&nbsp; Data Analyst &amp; BI Developer</div>
 
     <div class="h-name">
       <div class="h-name-main">
@@ -685,8 +662,8 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
     </div>
 
     <div class="h-typing-wrap"><span class="h-typing" id="typing"></span><span class="h-cursor">|</span></div>
-    <p class="h-sub">AI/ML &amp; Data Engineer</p>
-    <p class="h-desc">I build ML models, data pipelines and BI dashboards with Python, SQL, scikit-learn, FastAPI and Power BI.</p>
+    <p class="h-sub">Data Analyst &nbsp;·&nbsp; Business Intelligence Developer &nbsp;·&nbsp; Building AI Solutions</p>
+    <p class="h-desc">I build data-driven applications using SQL, Python, Power BI, Tableau and ETL pipelines — transforming raw data into strategic intelligence, and currently expanding into AI-powered business solutions.</p>
 
     <div class="h-btns">
       <a href="#projects" class="btn-p">
@@ -697,7 +674,10 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
         <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
         Get In Touch
       </a>
-      <div class="rdd rdd-c"><button type="button" class="rdd-btn btn-g" aria-haspopup="true" aria-expanded="false"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>Resume ▾</button><ul class="rdd-menu" role="menu"><li><a role="menuitem" href="assets/resume/Parth_Sharma_AI_ML_Engineer.pdf" download>AI/ML Engineer<span class=def>Default</span></a></li><li><a role="menuitem" href="assets/resume/Parth_Sharma_GenAI_LLM_Engineer.pdf" download>GenAI / LLM Engineer</a></li><li><a role="menuitem" href="assets/resume/Parth_Sharma_Machine_Learning_Engineer.pdf" download>Machine Learning Engineer</a></li><li><a role="menuitem" href="assets/resume/Parth_Sharma_AI_Engineer.pdf" download>AI Engineer</a></li><li><a role="menuitem" href="assets/resume/Parth_Sharma_Data_Scientist.pdf" download>Data Scientist</a></li><li><a role="menuitem" href="assets/resume/Parth_Sharma_Data_Engineer.pdf" download>Data Engineer</a></li><li><a role="menuitem" href="assets/resume/Parth_Sharma_Data_Analyst.pdf" download>Data Analyst</a></li><li><a role="menuitem" href="assets/resume/Parth_Sharma_BI_Analyst.pdf" download>BI Analyst</a></li></ul></div>
+      <a href="assets/resume/Parth_Sharma_Resume.pdf" class="btn-g">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        Resume
+      </a>
     </div>
 
     <div class="h-socials">
@@ -716,12 +696,18 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
     </div>
 
     <div class="h-stats-row">
-      <div class="h-stat"><div class="h-stat-n" data-count="8">0</div><div class="h-stat-l">Projects</div></div>
-      <div class="h-stat"><div class="h-stat-n" data-count="25">0</div><div class="h-stat-l">Tools & Skills</div></div>
-      <div class="h-stat"><div class="h-stat-n" data-count="3">0</div><div class="h-stat-l">Certifications</div></div>
+      <div class="h-stat"><div class="h-stat-n" data-count="6">0</div><div class="h-stat-l">Projects</div></div>
+      <div class="h-stat"><div class="h-stat-n" data-count="15">0</div><div class="h-stat-l">Tools & Skills</div></div>
+      <div class="h-stat"><div class="h-stat-n" data-count="2">0</div><div class="h-stat-l">Certifications</div></div>
     </div>
   </div>
   <div class="scroll-hint"><div class="scroll-line"></div><div class="scroll-label">scroll</div></div>
+  <!-- Sparkline decorative element (desktop only) -->
+  <div style="position:absolute;right:60px;top:50%;transform:translateY(-50%);opacity:.45;pointer-events:none;display:none" id="sparklineWrap">
+    <div style="font-family:var(--mono);font-size:10px;color:var(--text3);letter-spacing:1.5px;margin-bottom:10px">SQL SKILL GROWTH</div>
+    <canvas id="heroSparkline" width="220" height="70"></canvas>
+    <div style="font-family:var(--mono);font-size:10px;color:var(--cyan);letter-spacing:1px;margin-top:8px;text-align:right">92% →</div>
+  </div>
 </section>
 
 <!-- TICKER -->
@@ -740,7 +726,7 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
     <div class="ticker-item"><span>Business Intelligence</span> <span class="ticker-sep">·</span></div>
     <div class="ticker-item"><span>MySQL</span> <span class="ticker-sep">·</span></div>
     <div class="ticker-item"><span>KPI Dashboards</span> <span class="ticker-sep">·</span></div>
-    <div class="ticker-item"><span>Machine Learning</span> <span class="ticker-sep">·</span></div>
+    <div class="ticker-item"><span>AI Solutions</span> <span class="ticker-sep">·</span></div>
     <div class="ticker-item"><span>FastAPI</span> <span class="ticker-sep">·</span></div>
     <!-- duplicate for seamless loop -->
     <div class="ticker-item"><span>SQL</span> <span class="ticker-sep">·</span></div>
@@ -756,7 +742,7 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
     <div class="ticker-item"><span>Business Intelligence</span> <span class="ticker-sep">·</span></div>
     <div class="ticker-item"><span>MySQL</span> <span class="ticker-sep">·</span></div>
     <div class="ticker-item"><span>KPI Dashboards</span> <span class="ticker-sep">·</span></div>
-    <div class="ticker-item"><span>Machine Learning</span> <span class="ticker-sep">·</span></div>
+    <div class="ticker-item"><span>AI Solutions</span> <span class="ticker-sep">·</span></div>
     <div class="ticker-item"><span>FastAPI</span> <span class="ticker-sep">·</span></div>
   </div>
 </div>
@@ -768,24 +754,24 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
     <div class="s-title rv d1">From Raw Data to <em>Real Impact</em></div>
     <div class="vp-grid">
       <div class="vp-card rv d1" style="--vg:linear-gradient(90deg,#3b82f6,#22d3ee)">
-        <span class="vp-emoji">🧠</span>
-        <div class="vp-title">Machine Learning</div>
-        <div class="vp-sub">Cleaning data, engineering features, then training and comparing models with scikit-learn, XGBoost and PyTorch.</div>
+        <span class="vp-emoji">🔍</span>
+        <div class="vp-title">Deep Analytics</div>
+        <div class="vp-sub">I don't just query data — I interrogate it. Every metric tells a business story, and I find the one that actually moves the needle.</div>
       </div>
       <div class="vp-card rv d2" style="--vg:linear-gradient(90deg,#a78bfa,#6366f1)">
-        <span class="vp-emoji">🚀</span>
-        <div class="vp-title">Deploy &amp; APIs</div>
-        <div class="vp-sub">Serving models as live FastAPI endpoints. My Insurance Incentive app runs on Render with a web frontend on Vercel.</div>
+        <span class="vp-emoji">⚙️</span>
+        <div class="vp-title">Pipeline Engineering</div>
+        <div class="vp-sub">ETL pipelines, star schemas, optimized SQL — I build the infrastructure that makes analytics reliable, fast, and scalable.</div>
       </div>
       <div class="vp-card rv d3" style="--vg:linear-gradient(90deg,#22d3ee,#34d399)">
-        <span class="vp-emoji">⚙️</span>
-        <div class="vp-title">Data Pipelines</div>
-        <div class="vp-sub">ETL in MySQL/SQL and Pentaho Spoon, star-schema fact and dimension tables, and data validation.</div>
-      </div>
-      <div class="vp-card rv d4" style="--vg:linear-gradient(90deg,#fbbf24,#f472b6)">
         <span class="vp-emoji">📊</span>
         <div class="vp-title">BI Dashboards</div>
-        <div class="vp-sub">Power BI dashboards built with SQL and DAX, refreshed weekly for teachers and administrators.</div>
+        <div class="vp-sub">Power BI dashboards that don't just display data — they communicate insight clearly to every stakeholder in the room.</div>
+      </div>
+      <div class="vp-card rv d4" style="--vg:linear-gradient(90deg,#fbbf24,#f472b6)">
+        <span class="vp-emoji">🚀</span>
+        <div class="vp-title">Data Science Path</div>
+        <div class="vp-sub">Actively expanding into FastAPI, Generative AI, and AI Solutions Engineering — building intelligent data applications.</div>
       </div>
     </div>
   </div>
@@ -804,41 +790,38 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
             <div class="acard-top-bg"></div>
             <div class="acard-avatar">PS<div class="acard-avatar-ring"></div></div>
             <div class="acard-name">Parth Sharma</div>
-            <div class="acard-role">AI/ML &amp; Data Engineer</div>
+            <div class="acard-role">Data Analyst · BI Developer · AI Solutions (Learning)</div>
             <div class="acard-loc">📍 Bhopal, Madhya Pradesh, India</div>
           </div>
           <div class="acard-stats">
-            <div class="ac-stat"><div class="ac-stat-n">8</div><div class="ac-stat-l">Projects</div></div>
+            <div class="ac-stat"><div class="ac-stat-n">6+</div><div class="ac-stat-l">Projects</div></div>
             <div class="ac-stat"><div class="ac-stat-n">5+</div><div class="ac-stat-l">Tools</div></div>
-            <div class="ac-stat"><div class="ac-stat-n">3</div><div class="ac-stat-l">Certs</div></div>
+            <div class="ac-stat"><div class="ac-stat-n">2</div><div class="ac-stat-l">Certs</div></div>
           </div>
           <div class="acard-status"><div class="status-dot"></div>Open to opportunities</div>
           <div style="padding:0 24px;margin-bottom:10px;font-size:11px;color:var(--text3);font-family:var(--mono);letter-spacing:1.5px">CORE SKILLS</div>
           <div class="acard-chips">
-            <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">scikit-learn</span><span class="chip">XGBoost</span><span class="chip">FastAPI</span><span class="chip">Power BI</span><span class="chip">ETL</span><span class="chip">Pandas</span>
+            <span class="chip">SQL</span><span class="chip">Python</span><span class="chip">Power BI</span><span class="chip">Tableau</span><span class="chip">ETL</span><span class="chip">DAX</span><span class="chip">Pandas</span><span class="chip">MySQL</span>
           </div>
         </div>
       </div>
       <div class="rv d1">
-        <div class="about-h3">AI/ML &amp; Data Engineer building <em>models</em>, pipelines and dashboards</div>
-        <p class="about-p">I'm a B.Tech (AI &amp; Data Science) student graduating in 2026, interning at Decode Data Academy where I build ETL pipelines, star-schema models and Power BI dashboards.</p>
-        <p class="about-p">I also build ML projects end to end: cleaning data, engineering features, training models and deploying them as live APIs. My Insurance Incentive app runs on FastAPI.</p>
-        <p class="about-p">I'm currently learning Generative AI, LLMs and RAG, with AI Solutions Engineering planned next.</p>
+        <div class="about-h3">Data Analyst building <em>intelligent</em><br>business solutions</div>
+        <p class="about-p">I'm a Data Analyst and Business Intelligence Developer passionate about transforming complex datasets into strategic decisions. My expertise spans SQL, Python, Power BI, Tableau, and end-to-end ETL pipelines — with a track record of building dashboards that drive measurable business outcomes.</p>
+        <p class="about-p">Currently interning at Decode Data Academy, I architect ETL workflows, model star schemas, and craft executive-level Power BI dashboards that power KPI tracking across business domains. I specialize in turning business problems into analytical frameworks that stakeholders actually use.</p>
+        <p class="about-p">I am currently learning FastAPI, and AI Solutions Engineering — with the goal of building AI-powered data applications. I am not yet an AI Engineer, but I am actively building toward it with purpose and structure.</p>
         <div class="about-cards-grid rv d2">
-          <div class="abcard"><div class="abcard-icon">🔍</div><div class="abcard-title">Analytical Depth</div><div class="abcard-sub">I don't just query data — I interrogate it. Every number tells a story worth finding.</div></div>
-          <div class="abcard"><div class="abcard-icon">⚙️</div><div class="abcard-title">Engineering Mindset</div><div class="abcard-sub">ETL pipelines, star schemas, optimized SQL — building infrastructure that makes analytics reliable.</div></div>
-          <div class="abcard"><div class="abcard-icon">📊</div><div class="abcard-title">Visual Storytelling</div><div class="abcard-sub">Power BI dashboards that communicate insight to teachers, administrators and other stakeholders.</div></div>
-          <div class="abcard"><div class="abcard-icon">🚀</div><div class="abcard-title">Always Learning</div><div class="abcard-sub">Currently learning Generative AI, LLMs and RAG.</div></div>
+          <div class="abcard"><div class="abcard-icon">🔍</div><div class="abcard-title">Analytical Depth</div><div class="abcard-sub">I don't just query data — I interrogate it. Every number tells a business story worth finding.</div></div>
+          <div class="abcard"><div class="abcard-icon">⚙️</div><div class="abcard-title">Engineering Mindset</div><div class="abcard-sub">ETL pipelines, star schemas, optimized SQL — building infrastructure that makes analytics scalable.</div></div>
+          <div class="abcard"><div class="abcard-icon">📊</div><div class="abcard-title">Visual Storytelling</div><div class="abcard-sub">Power BI dashboards that don't just display data — they communicate insight to every stakeholder.</div></div>
+          <div class="abcard"><div class="abcard-icon">🚀</div><div class="abcard-title">Growth Trajectory</div><div class="abcard-sub">Actively bridging from analytics toward Data Science, learning ML and cloud platforms daily.</div></div>
         </div>
         <div class="journey rv d3">
           <div class="journey-title">Career Timeline</div>
-          <div class="jitem"><div class="jdot done"></div><div class="jyr">2026</div><div><div class="jcontent-title">B.Tech graduation</div><div class="jcontent-sub">Artificial Intelligence and Data Science</div></div></div>
-          <div class="jitem"><div class="jdot now"></div><div class="jyr">2025</div><div><div class="jcontent-title">Data Analytics Intern — Decode Data Academy</div><div class="jcontent-sub">July 2025 – Present · ETL · Power BI · SQL · Star Schema</div></div></div>
-          <div class="jitem"><div class="jdot done"></div><div class="jyr">2025</div><div><div class="jcontent-title">AWS Academy — Data Engineering Badge</div><div class="jcontent-sub">December 2025</div></div></div>
-          <div class="jitem"><div class="jdot done"></div><div class="jyr">2024</div><div><div class="jcontent-title">Wipro TalentNext — Database Solutions Expert</div><div class="jcontent-sub">October 2024</div></div></div>
-          <div class="jitem"><div class="jdot done"></div><div class="jyr">2022</div><div><div class="jcontent-title">B.Tech, Artificial Intelligence and Data Science — Lakshmi Narain College of Technology, Bhopal</div><div class="jcontent-sub">2022–2026</div></div></div>
-          <div class="jitem"><div class="jdot done"></div><div class="jyr">2020</div><div><div class="jcontent-title">Class XII — Manikala Nahar Higher Secondary School</div><div class="jcontent-sub">2020–21</div></div></div>
-          <div class="jitem"><div class="jdot done"></div><div class="jyr">2018</div><div><div class="jcontent-title">Class X — Shri Maniklal Nahar International School</div><div class="jcontent-sub">2018–19</div></div></div>
+          <div class="jitem"><div class="jdot now"></div><div class="jyr">2026</div><div><div class="jcontent-title">Data Analyst Intern — Decode Data Academy</div><div class="jcontent-sub">ETL · Power BI · SQL · Data Modeling · KPI Dashboards</div></div></div>
+          <div class="jitem"><div class="jdot done"></div><div class="jyr">2025</div><div><div class="jcontent-title">AWS Academy — Data Engineering Badge</div><div class="jcontent-sub">Cloud data pipelines, S3, Glue & Redshift</div></div></div>
+          <div class="jitem"><div class="jdot done"></div><div class="jyr">2024</div><div><div class="jcontent-title">Wipro TalentNext — Database Solution Expert</div><div class="jcontent-sub">Enterprise database design & advanced SQL</div></div></div>
+          <div class="jitem"><div class="jdot done"></div><div class="jyr">2022</div><div><div class="jcontent-title">B.Tech, Computer Science — RGPV University, Bhopal</div><div class="jcontent-sub">Foundation in programming, data structures & databases</div></div></div>
         </div>
       </div>
     </div>
@@ -881,14 +864,67 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
   <div class="s-in">
     <div class="s-label rv">02 — Technical Skills</div>
     <div class="s-title rv d1">My <em>Toolkit</em></div>
-    <div class="s-sub rv d2">Grouped by what I use each tool for.</div>
+    <div class="s-sub rv d2">A curated stack for extracting, transforming, and visualizing data.</div>
     <div class="skills-layout">
       <div class="skill-cats">
-        <div class="skcat rv d1" style="--cg:linear-gradient(90deg,#3b82f6,#22d3ee)"><div class="skcat-head"><div class="skic a">🤖</div><div class="skcat-title">Machine Learning</div></div><div class="sktags"><span class="sktag">scikit-learn</span><span class="sktag">XGBoost</span><span class="sktag">PyTorch</span><span class="sktag">feature engineering</span><span class="sktag">classification</span><span class="sktag">model evaluation</span></div></div>
-        <div class="skcat rv d2" style="--cg:linear-gradient(90deg,#a78bfa,#6366f1)"><div class="skcat-head"><div class="skic b">💬</div><div class="skcat-title">GenAI &amp; APIs</div></div><div class="sktags"><span class="sktag">FastAPI</span><span class="sktag">REST APIs</span><span class="sktag">LLMs <em class="sk-learn">learning</em></span><span class="sktag">RAG <em class="sk-learn">learning</em></span></div></div>
-        <div class="skcat rv d3" style="--cg:linear-gradient(90deg,#f97316,#f472b6)"><div class="skcat-head"><div class="skic d">⚙️</div><div class="skcat-title">Data Engineering</div></div><div class="sktags"><span class="sktag">MySQL</span><span class="sktag">ETL</span><span class="sktag">Pentaho Spoon</span><span class="sktag">star schema</span><span class="sktag">data validation</span></div></div>
-        <div class="skcat rv d4" style="--cg:linear-gradient(90deg,#22d3ee,#34d399)"><div class="skcat-head"><div class="skic c">📈</div><div class="skcat-title">Analytics &amp; BI</div></div><div class="sktags"><span class="sktag">SQL</span><span class="sktag">Power BI</span><span class="sktag">DAX</span><span class="sktag">Tableau</span><span class="sktag">Excel</span></div></div>
-        <div class="skcat rv d5" style="--cg:linear-gradient(90deg,#34d399,#22d3ee)"><div class="skcat-head"><div class="skic e">🐍</div><div class="skcat-title">Python</div></div><div class="sktags"><span class="sktag">Pandas</span><span class="sktag">NumPy</span><span class="sktag">Matplotlib</span><span class="sktag">Seaborn</span><span class="sktag">Jupyter</span></div></div>
+        <div class="skcat rv d1" style="--cg:linear-gradient(90deg,#3b82f6,#22d3ee)"><div class="skcat-head"><div class="skic a">📊</div><div class="skcat-title">Data Analytics</div></div><div class="sktags"><span class="sktag">SQL</span><span class="sktag">Python</span><span class="sktag">Excel</span><span class="sktag">Statistical Analysis</span><span class="sktag">KPI Tracking</span><span class="sktag">Data Storytelling</span></div></div>
+        <div class="skcat rv d2" style="--cg:linear-gradient(90deg,#a78bfa,#6366f1)"><div class="skcat-head"><div class="skic b">📈</div><div class="skcat-title">Business Intelligence</div></div><div class="sktags"><span class="sktag">Power BI</span><span class="sktag">Tableau</span><span class="sktag">DAX</span><span class="sktag">Dashboarding</span><span class="sktag">Data Visualization</span></div></div>
+        <div class="skcat rv d3" style="--cg:linear-gradient(90deg,#f97316,#f472b6)"><div class="skcat-head"><div class="skic d">⚙️</div><div class="skcat-title">Data Engineering</div></div><div class="sktags"><span class="sktag">MySQL</span><span class="sktag">ETL</span><span class="sktag">Pentaho Spoon</span><span class="sktag">Data Modeling</span><span class="sktag">Star Schema</span><span class="sktag">Pipelines</span></div></div>
+        <div class="skcat rv d4" style="--cg:linear-gradient(90deg,#34d399,#22d3ee)"><div class="skcat-head"><div class="skic e">🐍</div><div class="skcat-title">Python Ecosystem</div></div><div class="sktags"><span class="sktag">Pandas</span><span class="sktag">NumPy</span><span class="sktag">Matplotlib</span><span class="sktag">Seaborn</span><span class="sktag">Jupyter</span></div></div>
+        <div class="skcat rv d5" style="--cg:linear-gradient(90deg,#fbbf24,#f472b6)"><div class="skcat-head"><div class="skic" style="background:rgba(251,191,36,.12);font-size:16px">🤖</div><div class="skcat-title" style="color:var(--amber)">Currently Learning</div></div><div class="sktags"><span class="sktag" style="border-color:rgba(251,191,36,.25);color:var(--amber)">FastAPI</span><span class="sktag" style="border-color:rgba(251,191,36,.25);color:var(--amber)">Generative AI</span><span class="sktag" style="border-color:rgba(251,191,36,.25);color:var(--amber)">AI Solutions Engineering</span></div></div>
+      </div>
+      <div class="skills-panel rv d2">
+        <div class="sp-title">Proficiency</div>
+        <div class="sbar"><div class="sbar-meta"><span class="sbar-name">SQL & MySQL</span><span class="sbar-pct">92%</span></div><div class="sbar-track"><div class="sbar-fill f1"></div></div></div>
+        <div class="sbar"><div class="sbar-meta"><span class="sbar-name">Power BI & DAX</span><span class="sbar-pct">88%</span></div><div class="sbar-track"><div class="sbar-fill f2"></div></div></div>
+        <div class="sbar"><div class="sbar-meta"><span class="sbar-name">Python</span><span class="sbar-pct">85%</span></div><div class="sbar-track"><div class="sbar-fill f3"></div></div></div>
+        <div class="sbar"><div class="sbar-meta"><span class="sbar-name">Tableau</span><span class="sbar-pct">82%</span></div><div class="sbar-track"><div class="sbar-fill f4"></div></div></div>
+        <div class="sbar"><div class="sbar-meta"><span class="sbar-name">ETL / Pentaho</span><span class="sbar-pct">80%</span></div><div class="sbar-track"><div class="sbar-fill f5"></div></div></div>
+        <div class="sbar"><div class="sbar-meta"><span class="sbar-name">Pandas & NumPy</span><span class="sbar-pct">80%</span></div><div class="sbar-track"><div class="sbar-fill f6"></div></div></div>
+        <div class="sbar"><div class="sbar-meta"><span class="sbar-name">MySQL & Data Modeling</span><span class="sbar-pct">85%</span></div><div class="sbar-track"><div class="sbar-fill f7"></div></div></div>
+        <div class="sp-learning">
+          <div class="sp-title" style="margin-bottom:14px">Currently Learning</div>
+          <div class="sp-learn-item"><div class="sp-learn-dot" style="background:var(--blue);box-shadow:0 0 8px var(--blue);animation:glowPulse 2s .3s ease-in-out infinite"></div>FastAPI & Backend for AI</div>
+          <div class="sp-learn-item"><div class="sp-learn-dot" style="background:var(--amber);box-shadow:0 0 8px var(--amber);animation:glowPulse 2s .6s ease-in-out infinite"></div>Generative AI & LLMs</div>
+          <div class="sp-learn-item"><div class="sp-learn-dot" style="background:var(--cyan);box-shadow:0 0 8px var(--cyan);animation:glowPulse 2s .9s ease-in-out infinite"></div>AI Solutions Engineering</div>
+        </div>
+        <!-- RADAR CHART -->
+        <div class="radar-wrap" style="margin-top:28px">
+          <div class="radar-title">Skill Radar</div>
+          <svg id="radarSvg" viewBox="-10 -10 220 220" xmlns="http://www.w3.org/2000/svg">
+            <!-- grid rings -->
+            <polygon points="100,20 163,60 163,140 100,180 37,140 37,60" class="radar-grid" style="opacity:.4"/>
+            <polygon points="100,42 148,70 148,130 100,158 52,130 52,70"  class="radar-grid" style="opacity:.3"/>
+            <polygon points="100,64 133,80 133,120 100,136 67,120 67,80"  class="radar-grid" style="opacity:.2"/>
+            <polygon points="100,86 118,90 118,110 100,114 82,110 82,90"  class="radar-grid" style="opacity:.1"/>
+            <!-- axes -->
+            <line x1="100" y1="20"  x2="100" y2="100" class="radar-axis"/>
+            <line x1="163" y1="60"  x2="100" y2="100" class="radar-axis"/>
+            <line x1="163" y1="140" x2="100" y2="100" class="radar-axis"/>
+            <line x1="100" y1="180" x2="100" y2="100" class="radar-axis"/>
+            <line x1="37"  y1="140" x2="100" y2="100" class="radar-axis"/>
+            <line x1="37"  y1="60"  x2="100" y2="100" class="radar-axis"/>
+            <!-- data polygon SQL=92%, PowerBI=88%, Python=82%, ETL=78%, Pandas=80%, MySQL=85% -->
+            <!-- scaled: 92%→14.4px from center(100), each axis 80px total -->
+            <polygon id="radarPoly"
+              points="100,27 151,65 152,124 100,168 54,127 50,67"
+              class="radar-polygon" style="opacity:0;transition:opacity .8s 1s"/>
+            <!-- dots -->
+            <circle cx="100" cy="27"  r="4" class="radar-dot"/>
+            <circle cx="151" cy="65"  r="4" class="radar-dot"/>
+            <circle cx="152" cy="124" r="4" class="radar-dot"/>
+            <circle cx="100" cy="168" r="4" class="radar-dot"/>
+            <circle cx="54"  cy="127" r="4" class="radar-dot"/>
+            <circle cx="50"  cy="67"  r="4" class="radar-dot"/>
+            <!-- labels -->
+            <text x="100" y="12"  text-anchor="middle" class="radar-label">SQL 92%</text>
+            <text x="172" y="62"  text-anchor="start"  class="radar-label">Power BI 88%</text>
+            <text x="172" y="144" text-anchor="start"  class="radar-label">MySQL 85%</text>
+            <text x="100" y="196" text-anchor="middle" class="radar-label">Python 82%</text>
+            <text x="28"  y="144" text-anchor="end"    class="radar-label">Pandas 80%</text>
+            <text x="28"  y="62"  text-anchor="end"    class="radar-label">ETL 78%</text>
+          </svg>
+        </div>
       </div>
     </div>
   </div>
@@ -903,14 +939,14 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
       <div class="exp-left rl">
         <div class="exp-kicker">July 2025 — Present</div>
         <h3>Building real-world data solutions, every single day.</h3>
-        <p>From cleaning student records to building Power BI dashboards, this internship is hands-on data engineering and BI work.</p>
+        <p>From designing ETL pipelines to crafting executive-level dashboards, this internship has been a deep immersion into production-grade data work.</p>
       </div>
       <div class="exp-card rr">
         <div class="exp-card-glow"></div>
         <div class="exp-card-accent"></div>
         <div class="exp-hdr">
           <div>
-            <div class="exp-title">Data Analytics Intern</div>
+            <div class="exp-title">Data Analyst Intern</div>
             <div class="exp-company">Decode Data Academy</div>
           </div>
           <div class="exp-badge-wrap">
@@ -920,15 +956,15 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
         </div>
         <div class="exp-loc">📍 Bhopal, Madhya Pradesh, India</div>
         <div class="exp-duties">
-          <div class="eduty"><div class="eduty-n">01</div><div class="eduty-t">Built ETL pipelines in MySQL/SQL to clean and standardize 10,000+ student records across 5+ branches and 2 colleges, eliminating 95%+ of data errors.</div></div>
-          <div class="eduty"><div class="eduty-n">02</div><div class="eduty-t">Designed 10–15 SQL views and 4–5 star-schema fact/dimension tables for reporting.</div></div>
-          <div class="eduty"><div class="eduty-n">03</div><div class="eduty-t">Added a Pentaho Spoon ETL layer to existing SQL workflows, improving processing efficiency by 20–30%.</div></div>
-          <div class="eduty"><div class="eduty-n">04</div><div class="eduty-t">Built 6 Power BI dashboards (10+ KPI cards, SQL + DAX), refreshed weekly for teachers and administrators.</div></div>
-          <div class="eduty"><div class="eduty-n">05</div><div class="eduty-t">Validated data and business rules across 1,000+ records.</div></div>
-          <div class="eduty"><div class="eduty-n">06</div><div class="eduty-t">Worked as the only intern in a 6-member analytics team, defining schemas and KPIs.</div></div>
+          <div class="eduty"><div class="eduty-n">01</div><div class="eduty-t">Led end-to-end Data Analytics and Data Engineering projects — from raw ingestion through ETL transformation to production Power BI dashboards used by leadership.</div></div>
+          <div class="eduty"><div class="eduty-n">02</div><div class="eduty-t">Designed and deployed automated ETL pipelines using Pentaho Spoon, streamlining transformation workflows and significantly reducing manual processing overhead.</div></div>
+          <div class="eduty"><div class="eduty-n">03</div><div class="eduty-t">Implemented star schema and dimensional data models optimizing query performance and enabling scalable, reliable BI reporting across business units.</div></div>
+          <div class="eduty"><div class="eduty-n">04</div><div class="eduty-t">Built interactive Power BI dashboards tracking critical business KPIs with drill-down capabilities, enabling faster, data-driven decision-making at every level.</div></div>
+          <div class="eduty"><div class="eduty-n">05</div><div class="eduty-t">Developed advanced SQL queries and Python analysis scripts for data cleaning, transformation, and generating actionable business intelligence reports.</div></div>
+          <div class="eduty"><div class="eduty-n">06</div><div class="eduty-t">Collaborated cross-functionally on analytics projects, delivering measurable outcomes and strategic data-driven recommendations to organizational leadership.</div></div>
         </div>
         <div class="exp-tags">
-          <span class="etag">SQL</span><span class="etag">MySQL</span><span class="etag">Power BI</span><span class="etag">DAX</span><span class="etag">ETL</span><span class="etag">Pentaho Spoon</span><span class="etag">Star Schema</span><span class="etag">KPI Dashboards</span>
+          <span class="etag">SQL</span><span class="etag">Power BI</span><span class="etag">Python</span><span class="etag">ETL</span><span class="etag">Pentaho Spoon</span><span class="etag">Data Modeling</span><span class="etag">Star Schema</span><span class="etag">DAX</span><span class="etag">KPI Dashboards</span>
         </div>
       </div>
     </div>
@@ -940,43 +976,28 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
   <div class="s-in">
     <div class="s-label rv">04 — Projects</div>
     <div class="proj-top">
-      <div><div class="s-title" style="margin-bottom:6px">Featured <em>Work</em></div><div class="s-sub" style="font-size:15px">End-to-end projects spanning machine learning, engineering, and visualization.</div></div>
+      <div><div class="s-title" style="margin-bottom:6px">Featured <em>Work</em></div><div class="s-sub" style="font-size:15px">End-to-end projects spanning analytics, engineering, and visualization.</div></div>
       <!-- PROJECT FILTERS -->
       <div class="proj-filters rv" id="projFilters">
         <button class="pf-btn active" data-filter="all">All</button>
-        <button class="pf-btn" data-filter="ai">ML &amp; AI</button>
         <button class="pf-btn" data-filter="powerbi">Power BI</button>
         <button class="pf-btn" data-filter="python">Python</button>
         <button class="pf-btn" data-filter="sql">SQL</button>
         <button class="pf-btn" data-filter="etl">ETL</button>
-              </div>
+        <button class="pf-btn" data-filter="ai" style="opacity:.55">AI <span style="font-size:10px;color:var(--amber)">Soon</span></button>
+      </div>
     </div>
     <div class="proj-grid" id="projGrid">
-          <div class="pcard wide rv" data-cats="python ai" onclick="openModal(0)">
-        <div class="pthumb" style="background:linear-gradient(135deg,#040e22,#081a38)"><div class="pthumb-dots"></div><div class="pt-overlay" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div class="pthumb-glyph">ML</div></div><div class="pthumb-fade" style="background:linear-gradient(to top,#040e22,transparent)"></div><div class="pnum">01 / 08 &nbsp;·&nbsp; Featured &nbsp;·&nbsp; New</div></div>
-        <div class="pbody">
-          <div class="ptitle">Insurance Incentive Optimization</div>
-          <div class="pdesc">Predicts policy renewal probability on 67,875 records and recommends the revenue-maximizing agent incentive (Rs. 500–4,500) per policy.</div>
-          <div class="phl-grid"><div class="phl">scikit-learn Pipeline: median imputation, one-hot + target encoding, scaling</div><div class="phl">Engineered Total_late feature</div><div class="phl">Compared Random Forest and XGBoost</div><div class="phl">FastAPI /predict endpoint on Render + live web frontend on Vercel</div></div>
-          <div class="pstack"><span class="pbadge">Python</span><span class="pbadge">scikit-learn</span><span class="pbadge">XGBoost</span><span class="pbadge">FastAPI</span><span class="pbadge">Render</span><span class="pbadge">Vercel</span></div>
-          <div class="pactions" onclick="event.stopPropagation()"><a href="https://github.com/Rider-04/Insurance_incentive_prediction" target="_blank" rel="noopener" class="pabtn gh"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.343-3.369-1.343-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.138 20.165 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg> GitHub</a><a href="https://insurance-incentive-prediction.vercel.app/" target="_blank" rel="noopener" class="pabtn live">↗ Live Demo</a></div>
-        </div>
-      </div>
+    <!-- AI filter message (hidden by default) -->
+    <div id="ai-filter-msg" style="display:none;grid-column:1/-1;text-align:center;padding:60px 20px;background:var(--glass);border:1px solid rgba(251,191,36,.15);border-radius:var(--r2)">
+      <div style="font-size:36px;margin-bottom:16px">🤖</div>
+      <div style="font-family:var(--display);font-size:22px;font-weight:700;letter-spacing:-.5px;margin-bottom:10px">AI Projects Coming Soon</div>
+      <div style="font-size:15px;color:var(--text2);max-width:480px;margin:0 auto">I'm currently learning FastAPI and Generative AI. My first AI-powered projects will land here soon. <a href="#upcoming" style="color:var(--cyan);text-decoration:none">See upcoming projects →</a></div>
+    </div>
 
-      <div class="pcard wide rv d1" data-cats="python ai" onclick="openModal(1)">
-        <div class="pthumb" style="background:linear-gradient(135deg,#04100a,#082018)"><div class="pthumb-dots"></div><div class="pt-overlay" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div class="pthumb-glyph">ML</div></div><div class="pthumb-fade" style="background:linear-gradient(to top,#04100a,transparent)"></div><div class="pnum">02 / 08 &nbsp;·&nbsp; New</div></div>
-        <div class="pbody">
-          <div class="ptitle">Cab &amp; Auto Fare Prediction</div>
-          <div class="pdesc">Merged 7 ride datasets (465K+ raw records) into one schema; removed 7,329 duplicates and 1,270 rate-card rows, leaving 376K clean rows.</div>
-          <div class="phl-grid"><div class="phl">Found and removed target leakage</div><div class="phl">sin/cos time features; location-frequency encoding for ~12.8K locations</div><div class="phl">Leak-free 70/15/15 split</div><div class="phl">HistGradientBoosting baseline vs PyTorch embedding MLP with a 3-seed ensemble</div></div>
-          <div class="pstack"><span class="pbadge">Python</span><span class="pbadge">Pandas</span><span class="pbadge">PyTorch</span><span class="pbadge">scikit-learn</span></div>
-          <div class="pactions" onclick="event.stopPropagation()"><a href="https://github.com/Rider-04/cab_bike_auto_fare_prediction" target="_blank" rel="noopener" class="pabtn gh"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.343-3.369-1.343-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.138 20.165 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg> GitHub</a></div>
-        </div>
-      </div>
-
-<!-- P1 WIDE: Student Contest -->
-      <div class="pcard wide rv" data-cats="sql powerbi" onclick="openModal(2)">
-        <div class="pthumb"><div class="pthumb-bg pt1"></div><div class="pthumb-dots"></div><div class="pt-overlay" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div class="pthumb-glyph">SQL</div></div><div class="pthumb-fade" style="background:linear-gradient(to top,#040e22,transparent)"></div><div class="pnum">03 / 08 &nbsp;·&nbsp; Featured</div></div>
+      <!-- P1 WIDE: Student Contest -->
+      <div class="pcard wide rv" data-cats="sql powerbi" onclick="openModal(0)">
+        <div class="pthumb"><div class="pthumb-bg pt1"></div><div class="pthumb-dots"></div><div class="pt-overlay" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div class="pthumb-glyph">SQL</div></div><div class="pthumb-fade" style="background:linear-gradient(to top,#040e22,transparent)"></div><div class="pnum">01 / 06 &nbsp;·&nbsp; Featured</div></div>
         <div class="pbody">
           <div class="ptitle">Student Contest Analytics System</div>
           <div class="pdesc">A comprehensive analytics platform for ranking students, tracking KPIs, and classifying participation patterns — built on a star schema dimensional model with end-to-end Power BI reporting.</div>
@@ -995,15 +1016,15 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
       </div>
 
       <!-- P2: Banking Risk -->
-      <div class="pcard rv d1" data-cats="python ai" onclick="openModal(3)">
-        <div class="pthumb"><div class="pthumb-bg pt2"></div><div class="pthumb-dots"></div><div class="pt-overlay" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div class="pthumb-glyph">PY</div></div><div class="pthumb-fade" style="background:linear-gradient(to top,#04100a,transparent)"></div><div class="pnum">04 / 08</div></div>
+      <div class="pcard rv d1" data-cats="python" onclick="openModal(1)">
+        <div class="pthumb"><div class="pthumb-bg pt2"></div><div class="pthumb-dots"></div><div class="pt-overlay" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div class="pthumb-glyph">PY</div></div><div class="pthumb-fade" style="background:linear-gradient(to top,#04100a,transparent)"></div><div class="pnum">02 / 06</div></div>
         <div class="pbody">
           <div class="ptitle">Banking Risk Analytics & Loan Default Analysis</div>
-          <div class="pdesc">Credit risk system analyzing loan defaults on 55K rows × 122 columns, with 10+ engineered features and a comparison of Logistic Regression, Decision Tree and Gradient Boosting.</div>
+          <div class="pdesc">Credit risk intelligence system analyzing loan defaults, EMI burden, and financial patterns using Python's full data science stack.</div>
           <div class="phl-grid">
-            <div class="phl">55K rows × 122 columns analyzed</div>
-            <div class="phl">10+ engineered features</div>
-            <div class="phl">Compared Logistic Regression, Decision Tree and Gradient Boosting</div>
+            <div class="phl">Credit risk segmentation & scoring</div>
+            <div class="phl">EMI burden & default prediction insights</div>
+            <div class="phl">Financial pattern analysis across borrower segments</div>
             <div class="phl">Rich visualizations — Matplotlib & Seaborn</div>
           </div>
           <div class="pstack"><span class="pbadge">Python</span><span class="pbadge">Pandas</span><span class="pbadge">NumPy</span><span class="pbadge">Matplotlib</span><span class="pbadge">Seaborn</span></div>
@@ -1014,8 +1035,8 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
       </div>
 
       <!-- P3: F1 -->
-      <div class="pcard rv d2" data-cats="powerbi" onclick="openModal(4)">
-        <div class="pthumb"><div class="pthumb-bg pt3"></div><div class="pthumb-dots"></div><div class="pt-overlay" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div class="pthumb-glyph">F1</div></div><div class="pthumb-fade" style="background:linear-gradient(to top,#180408,transparent)"></div><div class="pnum">05 / 08</div></div>
+      <div class="pcard rv d2" data-cats="powerbi" onclick="openModal(2)">
+        <div class="pthumb"><div class="pthumb-bg pt3"></div><div class="pthumb-dots"></div><div class="pt-overlay" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div class="pthumb-glyph">F1</div></div><div class="pthumb-fade" style="background:linear-gradient(to top,#180408,transparent)"></div><div class="pnum">03 / 06</div></div>
         <div class="pbody">
           <div class="ptitle">Formula 1 Championship Analytics Dashboard</div>
           <div class="pdesc">70+ years of F1 history distilled into an interactive Power BI dashboard — constructor dominance, race strategy, and driver performance across eras.</div>
@@ -1034,8 +1055,8 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
       </div>
 
       <!-- P4: Flight ETL -->
-      <div class="pcard rv d3" data-cats="etl sql" onclick="openModal(5)">
-        <div class="pthumb"><div class="pthumb-bg pt4"></div><div class="pthumb-dots"></div><div class="pt-overlay" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div class="pthumb-glyph">ETL</div></div><div class="pthumb-fade" style="background:linear-gradient(to top,#04100e,transparent)"></div><div class="pnum">06 / 08</div></div>
+      <div class="pcard rv d3" data-cats="etl sql" onclick="openModal(3)">
+        <div class="pthumb"><div class="pthumb-bg pt4"></div><div class="pthumb-dots"></div><div class="pt-overlay" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div class="pthumb-glyph">ETL</div></div><div class="pthumb-fade" style="background:linear-gradient(to top,#04100e,transparent)"></div><div class="pnum">04 / 06</div></div>
         <div class="pbody">
           <div class="ptitle">Flight Data Engineering Pipeline</div>
           <div class="pdesc">End-to-end data engineering pipeline processing airline data — from raw ingestion through ETL transformation to Power BI dashboards tracking operational performance.</div>
@@ -1054,8 +1075,8 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
       </div>
 
       <!-- P5 NEW: Cryptocurrency -->
-      <div class="pcard rv d1" data-cats="powerbi" onclick="openModal(6)">
-        <div class="pthumb" style="background:linear-gradient(135deg,#0f0a1e,#1a0f2e)"><div class="pthumb-dots"></div><div class="pt-overlay" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div class="pthumb-glyph" style="color:#fff;letter-spacing:-3px">₿</div></div><div class="pthumb-fade" style="background:linear-gradient(to top,#0f0a1e,transparent)"></div><div class="pnum">07 / 08 &nbsp;·&nbsp; New</div></div>
+      <div class="pcard rv d1" data-cats="powerbi" onclick="openModal(4)">
+        <div class="pthumb" style="background:linear-gradient(135deg,#0f0a1e,#1a0f2e)"><div class="pthumb-dots"></div><div class="pt-overlay" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div class="pthumb-glyph" style="color:#fff;letter-spacing:-3px">₿</div></div><div class="pthumb-fade" style="background:linear-gradient(to top,#0f0a1e,transparent)"></div><div class="pnum">05 / 06 &nbsp;·&nbsp; New</div></div>
         <div class="pbody">
           <div class="ptitle">Cryptocurrency Market Analysis Dashboard</div>
           <div class="pdesc">An end-to-end crypto analytics dashboard built using real-time CoinGecko API data to analyze market trends, volatility, tokenomics, and investment insights.</div>
@@ -1074,8 +1095,8 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
       </div>
 
       <!-- P6 NEW: Olist E-Commerce -->
-      <div class="pcard rv d2" data-cats="powerbi sql" onclick="openModal(7)">
-        <div class="pthumb" style="background:linear-gradient(135deg,#0a1a10,#142b1a)"><div class="pthumb-dots"></div><div class="pt-overlay" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div class="pthumb-glyph" style="letter-spacing:-3px">BI</div></div><div class="pthumb-fade" style="background:linear-gradient(to top,#0a1a10,transparent)"></div><div class="pnum">08 / 08 &nbsp;·&nbsp; New</div></div>
+      <div class="pcard rv d2" data-cats="powerbi sql" onclick="openModal(5)">
+        <div class="pthumb" style="background:linear-gradient(135deg,#0a1a10,#142b1a)"><div class="pthumb-dots"></div><div class="pt-overlay" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div class="pthumb-glyph" style="letter-spacing:-3px">BI</div></div><div class="pthumb-fade" style="background:linear-gradient(to top,#0a1a10,transparent)"></div><div class="pnum">06 / 06 &nbsp;·&nbsp; New</div></div>
         <div class="pbody">
           <div class="ptitle">Olist E-Commerce Analytics Dashboard</div>
           <div class="pdesc">A complete BI solution using the Brazilian Olist e-commerce dataset — analyzing marketplace operations, customer behavior, seller performance, and payment analytics across 100K+ orders.</div>
@@ -1093,19 +1114,14 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
         </div>
       </div>
 
-    <div id="ai-filter-msg" style="display:none;grid-column:1/-1;text-align:center;padding:48px 20px;background:var(--glass);border:1px solid rgba(251,191,36,.15);border-radius:var(--r2)">
-      <div style="font-size:32px;margin-bottom:12px">🤖</div>
-      <div style="font-family:var(--display);font-size:22px;font-weight:700;letter-spacing:-.5px;margin-bottom:10px">ML &amp; AI</div>
-      <div style="font-size:15px;color:var(--text2);max-width:480px;margin:0 auto">More ML and GenAI projects are planned. <a href="#upcoming" style="color:var(--cyan);text-decoration:none">See what I'm building next →</a></div>
-    </div>
     </div>
   </div>
 </section>
 
 <!-- PROJECT MODAL -->
 <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
-  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" onclick="event.stopPropagation()">
-    <button class="modal-close" aria-label="Close project details" onclick="closeModal()">✕</button>
+  <div class="modal" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeModal()">✕</button>
     <div class="modal-thumb" id="modalThumb"></div>
     <div class="modal-body">
       <div class="modal-kicker" id="modalKicker"></div>
@@ -1116,8 +1132,7 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
       <div class="modal-section-title">Tech Stack</div>
       <div class="modal-stack" id="modalStack"></div>
       <div class="modal-actions">
-        <a href="https://github.com/Rider-04" target="_blank" rel="noopener" class="pabtn gh" id="modalGh">View on GitHub →</a>
-        <a href="#" target="_blank" rel="noopener" class="pabtn live" id="modalLive" style="display:none">↗ Live</a>
+        <a href="https://github.com/Rider-04" target="_blank" class="pabtn gh">View on GitHub →</a>
       </div>
     </div>
   </div>
@@ -1129,17 +1144,13 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
     <div class="s-label rv">05 — Certifications</div>
     <div class="s-title rv d1">Credentials & <em>Recognition</em></div>
     <div class="certs-grid">
-      <div class="ccard rv d1" style="--cg:linear-gradient(90deg,transparent,#f97316,transparent)">
-        <div class="ccard-top"><div class="ccard-icon cci-a">☁️</div><div><div class="ccard-issuer">AWS Academy · Dec 2025</div><div class="ccard-name">Data Engineering Badge</div></div></div>
-        <div class="ccard-desc">Covered: data lakes, S3 storage, AWS Glue ETL, Redshift data warehousing, and cloud analytics.</div>
-      </div>
       <div class="ccard rv d2" style="--cg:linear-gradient(90deg,transparent,var(--purple),transparent)">
-        <div class="ccard-top"><div class="ccard-icon cci-p">🏆</div><div><div class="ccard-issuer">Wipro TalentNext · Oct 2024</div><div class="ccard-name">Database Solutions Expert</div></div></div>
-        <div class="ccard-desc">Covered: database design, SQL optimization, stored procedures, indexing strategies, and enterprise data management.</div>
+        <div class="ccard-top"><div class="ccard-icon cci-p">🏆</div><div><div class="ccard-issuer">Wipro TalentNext</div><div class="ccard-name">Database Solution Expert</div></div></div>
+        <div class="ccard-desc">Advanced database design, SQL optimization, stored procedures, indexing strategies, and enterprise data management. Demonstrates production-level SQL engineering expertise across complex real-world scenarios.</div>
       </div>
-      <div class="ccard rv d3" style="--cg:linear-gradient(90deg,transparent,var(--green),transparent)">
-        <div class="ccard-top"><div class="ccard-icon cci-g">⭐</div><div><div class="ccard-issuer">HackerRank</div><div class="ccard-name">SQL 5-Star Gold Badge</div></div></div>
-        <div class="ccard-desc">Covered: SQL problem solving on HackerRank.</div>
+      <div class="ccard rv d3" style="--cg:linear-gradient(90deg,transparent,#f97316,transparent)">
+        <div class="ccard-top"><div class="ccard-icon cci-a">☁️</div><div><div class="ccard-issuer">AWS Academy</div><div class="ccard-name">Data Engineering Badge</div></div></div>
+        <div class="ccard-desc">Cloud-scale data engineering on AWS — data lakes, S3 storage, AWS Glue ETL, Redshift data warehousing, and cloud analytics infrastructure. Foundation for modern cloud-native data solutions at scale.</div>
       </div>
     </div>
   </div>
@@ -1152,7 +1163,7 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
   <div class="s-in">
     <div class="s-label rv">— Current Learning</div>
     <div class="s-title rv d1">My <em>Learning Roadmap</em></div>
-    <div class="s-sub rv d2">A path from data analytics and machine learning to AI Solutions Engineering.</div>
+    <div class="s-sub rv d2">A structured path from Data Analytics to AI Solutions Engineering.</div>
     <div class="roadmap rv d2">
       <!-- COMPLETED -->
       <div class="rm-group">
@@ -1164,21 +1175,20 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
           <div class="rm-item done"><div class="rm-dot done"></div><div class="rm-content"><div class="rm-title">Power BI & DAX</div><div class="rm-sub">Interactive dashboards, KPI tracking, advanced DAX measures</div></div></div>
           <div class="rm-item done"><div class="rm-dot done"></div><div class="rm-content"><div class="rm-title">Tableau</div><div class="rm-sub">Visual analytics, calculated fields, dashboard design</div></div></div>
           <div class="rm-item done"><div class="rm-dot done"></div><div class="rm-content"><div class="rm-title">ETL & Pentaho Spoon</div><div class="rm-sub">End-to-end pipelines, data transformation, star schema design</div></div></div>
-          <div class="rm-item done"><div class="rm-dot done"></div><div class="rm-content"><div class="rm-title">Machine Learning (scikit-learn, XGBoost, PyTorch)</div><div class="rm-sub">Feature engineering, classification, model evaluation</div></div></div>
-          <div class="rm-item done"><div class="rm-dot done"></div><div class="rm-content"><div class="rm-title">FastAPI (deployed an ML API)</div><div class="rm-sub">REST API serving a deployed ML model</div></div></div>
         </div>
       </div>
-      <!-- IN PROGRESS -->
+      <!-- CURRENTLY LEARNING -->
       <div class="rm-group">
-        <div class="rm-group-label rm-active">🚀 In Progress</div>
+        <div class="rm-group-label rm-active">🚀 Currently Learning</div>
         <div class="rm-items">
-          <div class="rm-item active"><div class="rm-dot active"></div><div class="rm-content"><div class="rm-title">Generative AI, LLMs &amp; RAG</div><div class="rm-sub">LLMs and retrieval-augmented generation</div></div></div>
+          <div class="rm-item active"><div class="rm-dot active"></div><div class="rm-content"><div class="rm-title">FastAPI</div><div class="rm-sub">Building REST APIs to serve ML models and data pipelines</div><div class="rm-progress"><div class="rm-prog-fill" style="--rw:30%"></div></div></div></div>
         </div>
       </div>
       <!-- PLANNED -->
       <div class="rm-group">
         <div class="rm-group-label rm-planned">⏳ Planned</div>
         <div class="rm-items">
+          <div class="rm-item planned"><div class="rm-dot planned"></div><div class="rm-content"><div class="rm-title">Generative AI & LLMs</div><div class="rm-sub">Prompt engineering, RAG, LangChain, OpenAI APIs</div></div></div>
           <div class="rm-item planned"><div class="rm-dot planned"></div><div class="rm-content"><div class="rm-title">AI Solutions Engineering</div><div class="rm-sub">Building AI-powered data applications end-to-end</div></div></div>
         </div>
       </div>
@@ -1189,15 +1199,15 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
 <!-- ═══════════════ UPCOMING AI PROJECTS ═══════════════ -->
 <section id="upcoming">
   <div class="s-in">
-    <div class="s-label rv">— Building Next</div>
-    <div class="s-title rv d1">Building <em>Next</em></div>
-    <div class="s-sub rv d2">The next chapter — GenAI applications built on top of my ML and data foundation.</div>
+    <div class="s-label rv">— Upcoming Projects</div>
+    <div class="s-title rv d1">AI Projects <em>Coming Soon</em></div>
+    <div class="s-sub rv d2">The next chapter — AI-powered applications built on top of my analytics foundation.</div>
     <div class="upcoming-grid rv d2">
-      <div class="up-card"><div class="up-badge">Planned</div><div class="up-icon">📄</div><div class="up-title">AI PDF Chatbot (RAG)</div><div class="up-desc">Upload any PDF document and chat with it — powered by RAG and vector embeddings.</div><div class="up-stack"><span class="pbadge">Python</span><span class="pbadge">LangChain</span><span class="pbadge">RAG</span></div></div>
-      <div class="up-card"><div class="up-badge">Planned</div><div class="up-icon">🤖</div><div class="up-title">AI Resume Analyzer</div><div class="up-desc">Upload a resume, get AI-powered feedback on structure, keywords, and ATS compatibility.</div><div class="up-stack"><span class="pbadge">Python</span><span class="pbadge">FastAPI</span><span class="pbadge">LLM</span></div></div>
-      <div class="up-card"><div class="up-badge">Planned</div><div class="up-icon">🗄️</div><div class="up-title">AI SQL Assistant</div><div class="up-desc">Natural language to SQL — describe your query in plain English, get optimized SQL back instantly.</div><div class="up-stack"><span class="pbadge">Python</span><span class="pbadge">FastAPI</span><span class="pbadge">OpenAI</span><span class="pbadge">SQL</span></div></div>
-      <div class="up-card"><div class="up-badge">Planned</div><div class="up-icon">📊</div><div class="up-title">AI Business Dashboard Assistant</div><div class="up-desc">Ask your dashboard questions in natural language — get instant data insights powered by AI.</div><div class="up-stack"><span class="pbadge">Power BI</span><span class="pbadge">Python</span><span class="pbadge">OpenAI</span></div></div>
-      <div class="up-card"><div class="up-badge">Planned</div><div class="up-icon">📝</div><div class="up-title">AI Report Generator</div><div class="up-desc">Feed in your dataset, get a professional analytics report with charts and insights automatically.</div><div class="up-stack"><span class="pbadge">Python</span><span class="pbadge">FastAPI</span><span class="pbadge">Generative AI</span></div></div>
+      <div class="up-card"><div class="up-badge">Coming Soon</div><div class="up-icon">🤖</div><div class="up-title">AI Resume Analyzer</div><div class="up-desc">Upload a resume, get AI-powered feedback on structure, keywords, and ATS compatibility.</div><div class="up-stack"><span class="pbadge">Python</span><span class="pbadge">FastAPI</span><span class="pbadge">LLM</span></div></div>
+      <div class="up-card"><div class="up-badge">Coming Soon</div><div class="up-icon">🗄️</div><div class="up-title">AI SQL Assistant</div><div class="up-desc">Natural language to SQL — describe your query in plain English, get optimized SQL back instantly.</div><div class="up-stack"><span class="pbadge">Python</span><span class="pbadge">FastAPI</span><span class="pbadge">OpenAI</span><span class="pbadge">SQL</span></div></div>
+      <div class="up-card"><div class="up-badge">Coming Soon</div><div class="up-icon">📄</div><div class="up-title">AI PDF Chatbot</div><div class="up-desc">Upload any PDF document and chat with it — powered by RAG and vector embeddings.</div><div class="up-stack"><span class="pbadge">Python</span><span class="pbadge">LangChain</span><span class="pbadge">RAG</span></div></div>
+      <div class="up-card"><div class="up-badge">Coming Soon</div><div class="up-icon">📊</div><div class="up-title">AI Business Dashboard Assistant</div><div class="up-desc">Ask your dashboard questions in natural language — get instant data insights powered by AI.</div><div class="up-stack"><span class="pbadge">Power BI</span><span class="pbadge">Python</span><span class="pbadge">OpenAI</span></div></div>
+      <div class="up-card"><div class="up-badge">Coming Soon</div><div class="up-icon">📝</div><div class="up-title">AI Report Generator</div><div class="up-desc">Feed in your dataset, get a professional analytics report with charts and insights automatically.</div><div class="up-stack"><span class="pbadge">Python</span><span class="pbadge">FastAPI</span><span class="pbadge">Generative AI</span></div></div>
     </div>
   </div>
 </section>
@@ -1205,10 +1215,10 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
   <div class="quote-wrap rv">
     <div class="quote-mark">"</div>
     <div class="quote-text">
-      Data is the foundation. Models are the structure. <em>Working software</em> is the goal — one pipeline, one dashboard, and one model at a time.
+      Data is the foundation. Intelligence is the structure. <em>AI-powered solutions</em> are the future I'm building toward — one pipeline, one dashboard, and one model at a time.
     </div>
     <div class="quote-line"></div>
-    <div class="quote-attr">— Parth Sharma · AI/ML &amp; Data Engineer</div>
+    <div class="quote-attr">— Parth Sharma · Data Analyst → BI Developer → AI Solutions Engineer</div>
   </div>
 </section>
 <div class="s-divider"></div>
@@ -1220,7 +1230,7 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
     <div class="s-title rv d1">Let's <em>Connect</em></div>
     <div class="contact-grid">
       <div class="rl">
-        <p class="contact-intro">Whether it's an AI/ML, data science, data engineering or BI role, or a project to collaborate on — I'm open to connecting.</p>
+        <p class="contact-intro">Whether it's a data analyst role, BI opportunity, AI project collaboration, or a conversation about turning data into intelligent solutions — I'm always open to connecting.</p>
         <div class="citems">
           <div class="citem"><div class="citem-icon">📧</div><div><div class="citem-label">Email</div><div class="citem-val"><a href="mailto:sharmaparthsharma04@gmail.com">sharmaparthsharma04@gmail.com</a></div></div></div>
           <div class="citem"><div class="citem-icon">📱</div><div><div class="citem-label">Phone</div><div class="citem-val"><a href="tel:+917067837303">+91 7067837303</a></div></div></div>
@@ -1231,7 +1241,9 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
           <a href="mailto:sharmaparthsharma04@gmail.com" class="csoc">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>Email
           </a>
-          <div class="rdd "><button type="button" class="rdd-btn csoc" aria-haspopup="true" aria-expanded="false"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>Resume ▾</button><ul class="rdd-menu" role="menu"><li><a role="menuitem" href="assets/resume/Parth_Sharma_AI_ML_Engineer.pdf" download>AI/ML Engineer<span class=def>Default</span></a></li><li><a role="menuitem" href="assets/resume/Parth_Sharma_GenAI_LLM_Engineer.pdf" download>GenAI / LLM Engineer</a></li><li><a role="menuitem" href="assets/resume/Parth_Sharma_Machine_Learning_Engineer.pdf" download>Machine Learning Engineer</a></li><li><a role="menuitem" href="assets/resume/Parth_Sharma_AI_Engineer.pdf" download>AI Engineer</a></li><li><a role="menuitem" href="assets/resume/Parth_Sharma_Data_Scientist.pdf" download>Data Scientist</a></li><li><a role="menuitem" href="assets/resume/Parth_Sharma_Data_Engineer.pdf" download>Data Engineer</a></li><li><a role="menuitem" href="assets/resume/Parth_Sharma_Data_Analyst.pdf" download>Data Analyst</a></li><li><a role="menuitem" href="assets/resume/Parth_Sharma_BI_Analyst.pdf" download>BI Analyst</a></li></ul></div>
+          <a href="assets/resume/Parth_Sharma_Resume.pdf" download="Parth_Sharma_Resume.pdf" class="csoc" title="Download Resume">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>Resume
+          </a>
           <a href="https://github.com/Rider-04" target="_blank" class="csoc"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.343-3.369-1.343-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.138 20.165 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>GitHub</a>
           <a href="https://www.linkedin.com/in/parthsharma-dsxpert" target="_blank" class="csoc"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
           <a href="https://www.hackerrank.com/profile/0103AD221134" target="_blank" class="csoc"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c1.285 0 9.75 4.886 10.392 6 .645 1.115.645 10.885 0 12S13.287 24 12 24s-9.75-4.886-10.392-6c-.644-1.115-.644-10.885 0-12C2.25 4.886 10.715 0 12 0zm2.295 6.799c-.141 0-.258.115-.258.258v3.875H9.963V6.799c0-.143-.117-.258-.261-.258H8.103c-.141 0-.258.115-.258.258v10.403c0 .142.117.258.258.258h1.599c.144 0 .261-.116.261-.258v-3.875h4.074v3.875c0 .142.117.258.258.258h1.599c.143 0 .258-.116.258-.258V6.799c0-.143-.115-.258-.258-.258h-1.599z"/></svg>HackerRank</a>
@@ -1239,19 +1251,15 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
       </div>
       <div class="cform rr">
         <div class="cform-title">Send a Message</div>
-        <div class="hp" aria-hidden="true"><label for="website">Leave this field empty</label><input id="website" type="text" tabindex="-1" autocomplete="off"></div>
-        <div class="fg"><label for="from_name">Your Name</label><input id="from_name" type="text" placeholder="John Doe" autocomplete="name" required></div>
-        <div class="fg"><label for="from_email">Email</label><input id="from_email" type="email" placeholder="john@company.com" autocomplete="email" required></div>
-        <div class="fg"><label for="subject">Subject</label><input id="subject" type="text" placeholder="AI/ML Role / Collaboration / Hello"></div>
-        <div class="fg"><label for="message">Message</label><textarea id="message" required rows="5" placeholder="Tell me about the opportunity or project..."></textarea></div>
+        <div class="fg"><label>Your Name</label><input id="from_name" type="text" placeholder="John Doe"></div>
+        <div class="fg"><label>Email</label><input id="from_email" type="email" placeholder="john@company.com"></div>
+        <div class="fg"><label>Subject</label><input id="subject" type="text" placeholder="Data Analyst Role / Collaboration / Hello"></div>
+        <div class="fg"><label>Message</label><textarea id="message" rows="5" placeholder="Tell me about the opportunity or project..."></textarea></div>
         <button class="csubmit" onclick="handleSubmit(this)"><span>Send Message</span><span>→</span></button>
-        <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
       </div>
     </div>
   </div>
 </section>
-
-</main>
 
 <!-- ═══════════════ FOOTER ═══════════════ -->
 <footer>
@@ -1259,7 +1267,7 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
   <div class="foot-top">
     <div class="foot-col">
       <div class="foot-col-title">Parth Sharma</div>
-      <p>AI/ML & Data Engineer based in Bhopal, India. I build ML models, data pipelines and BI dashboards with Python, SQL and Power BI.</p>
+      <p>Data Analyst & Aspiring Data Scientist based in Bhopal, India. Transforming raw data into strategic intelligence through SQL, Python, and Power BI.</p>
       <div class="foot-status"><div class="foot-status-dot"></div>Open to opportunities</div>
     </div>
     <div class="foot-col">
@@ -1269,7 +1277,7 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#learning">Learning Roadmap</a>
-      <a href="#upcoming">Building Next</a>
+      <a href="#upcoming">AI Projects</a>
       <a href="#certifications">Certifications</a>
       <a href="#contact">Contact</a>
     </div>
@@ -1285,7 +1293,7 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
   <div class="foot-in">
     <div class="foot-l">
       <p>© 2026 <span>Parth Sharma</span> · Crafted with precision &amp; passion · Bhopal, India</p>
-      <p style="margin-top:5px;font-size:12px">Built with HTML · CSS · Vanilla JS · Outfit, Space Grotesk & DM Mono fonts</p>
+      <p style="margin-top:5px;font-size:12px">Built with HTML · CSS · Vanilla JS · Syne & Inter fonts</p>
     </div>
     <div class="foot-r">
       <a href="https://github.com/Rider-04" target="_blank" class="fsoc" title="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.343-3.369-1.343-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.138 20.165 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg></a>
@@ -1299,7 +1307,6 @@ body.light .form-status.ok{color:#047857}body.light .form-status.err{color:#b91c
 </footer>
 
 <script>
-const RM=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
 // ── PRELOADER ───────────────────────────────────────────
 const preloader = document.getElementById('preloader');
 const preFill   = document.getElementById('preFill');
@@ -1388,10 +1395,10 @@ function updateNavActive(){
 }
 
 // ── TYPING ──────────────────────────────────────────────
-const phrases=['AI/ML Engineer','Data Scientist','Data Engineer','BI Developer'];
+const phrases=['Data Analyst','Business Intelligence Developer','Power BI & Tableau Expert','SQL & Python Engineer','ETL Pipeline Architect','Building AI Solutions'];
 let pi=0,ci=0,del=false;
 const tel=document.getElementById('typing');
-if(RM){tel.textContent=phrases[0];document.querySelector(".h-cursor").style.display="none";}else(function type(){
+(function type(){
   const ph=phrases[pi];
   if(!del){tel.textContent=ph.slice(0,++ci);if(ci===ph.length){del=true;setTimeout(type,1800);return;}setTimeout(type,62);}
   else{tel.textContent=ph.slice(0,--ci);if(ci===0){del=false;pi=(pi+1)%phrases.length;setTimeout(type,420);return;}setTimeout(type,26);}
@@ -1404,9 +1411,7 @@ let W,H,pts=[];
 function resize(){W=pc.width=innerWidth;H=pc.height=innerHeight;}
 resize();window.addEventListener('resize',resize,{passive:true});
 for(let i=0;i<100;i++) pts.push({x:Math.random()*innerWidth,y:Math.random()*innerHeight,vx:(Math.random()-.5)*.22,vy:(Math.random()-.5)*.22,r:Math.random()*1.3+.3,a:Math.random()*.5+.2});
-let pRAF=0;
-function drawP(){
-  if(document.hidden||RM){pRAF=0;return;}
+(function drawP(){
   ctx.clearRect(0,0,W,H);
   for(let i=0;i<pts.length;i++){
     const p=pts[i];p.x+=p.vx;p.y+=p.vy;
@@ -1418,13 +1423,12 @@ function drawP(){
       if(d<130){ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(q.x,q.y);ctx.strokeStyle=`rgba(96,165,250,${.052*(1-d/130)})`;ctx.lineWidth=.5;ctx.stroke();}
     }
   }
-  pRAF=requestAnimationFrame(drawP);
-}
-if(!RM){drawP();document.addEventListener("visibilitychange",()=>{if(!document.hidden&&!pRAF)drawP();});}
+  requestAnimationFrame(drawP);
+})();
 
 // ── HERO MOUSE GLOW ─────────────────────────────────────
 const heroEl=document.getElementById('hero'),hGlow=document.getElementById('hGlow');
-if(!RM)heroEl.addEventListener('mousemove',e=>{
+heroEl.addEventListener('mousemove',e=>{
   const r=heroEl.getBoundingClientRect();
   hGlow.style.left=(e.clientX-r.left)+'px';
   hGlow.style.top=(e.clientY-r.top)+'px';
@@ -1434,6 +1438,18 @@ if(!RM)heroEl.addEventListener('mousemove',e=>{
 const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis');}),{threshold:.09,rootMargin:'0px 0px -44px 0px'});
 document.querySelectorAll('.rv,.rl,.rr').forEach(el=>obs.observe(el));
 
+// ── SKILL BARS ──────────────────────────────────────────
+const sbObs=new IntersectionObserver(entries=>entries.forEach(e=>{
+  if(e.isIntersecting){
+    e.target.querySelectorAll('.sbar-fill').forEach(b=>b.classList.add('go'));
+    // also reveal radar polygon
+    const poly=document.getElementById('radarPoly');
+    if(poly) poly.style.opacity='1';
+    sbObs.unobserve(e.target);
+  }
+}),{threshold:.3});
+document.querySelectorAll('.skills-panel').forEach(el=>sbObs.observe(el));
+
 // ── SNAP BAR ANIM ───────────────────────────────────────
 const snapObs=new IntersectionObserver(entries=>entries.forEach(e=>{
   if(e.isIntersecting){e.target.querySelectorAll('.snap-bar-fill').forEach(b=>b.classList.add('anim'));snapObs.unobserve(e.target);}
@@ -1442,7 +1458,6 @@ document.querySelectorAll('#snapshot').forEach(el=>snapObs.observe(el));
 
 // ── COUNTER ANIMATION ───────────────────────────────────
 function animCount(el,target,suffix='',dur=1400){
-  if(RM){el.textContent=target+suffix;return;}
   let start=null;
   (function step(ts){
     if(!start)start=ts;
@@ -1462,7 +1477,7 @@ const countObs=new IntersectionObserver(entries=>entries.forEach(e=>{
 document.querySelectorAll('#hero,#snapshot').forEach(el=>countObs.observe(el));
 
 // ── PROJECT 3D TILT ─────────────────────────────────────
-if(!RM)document.querySelectorAll('.pcard').forEach(c=>{
+document.querySelectorAll('.pcard').forEach(c=>{
   c.addEventListener('mousemove',e=>{
     const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
     c.style.transform=`translateY(-9px) perspective(900px) rotateX(${-y*4.5}deg) rotateY(${x*4.5}deg)`;
@@ -1472,14 +1487,12 @@ if(!RM)document.querySelectorAll('.pcard').forEach(c=>{
 
 // ── PROJECT MODAL ───────────────────────────────────────
 const projects=[
-  {kicker:'01 / 08 · ML & AI · Featured · New',title:'Insurance Incentive Optimization',desc:'Predicts policy renewal probability on 67,875 records and recommends the revenue-maximizing agent incentive (Rs. 500–4,500) per policy.',hls:['Predicts renewal probability on 67,875 policy records','Recommends the revenue-maximizing agent incentive (Rs. 500–4,500) per policy','scikit-learn Pipeline: median imputation, one-hot + target encoding, scaling, engineered Total_late feature','Compared Random Forest and XGBoost','FastAPI /predict endpoint on Render + live web frontend on Vercel'],stack:['Python','scikit-learn','XGBoost','FastAPI','Render','Vercel'],color:'#081a38'},
-  {kicker:'02 / 08 · ML & AI · New',title:'Cab & Auto Fare Prediction',desc:'Merged 7 ride datasets (465K+ raw records) into one schema; removed 7,329 duplicates and 1,270 rate-card rows, leaving 376K clean rows.',hls:['Found and removed target leakage','sin/cos time features','Location-frequency encoding for ~12.8K locations','Leak-free 70/15/15 split','HistGradientBoosting baseline vs PyTorch embedding MLP with a 3-seed ensemble'],stack:['Python','Pandas','PyTorch','scikit-learn'],color:'#082018'},
-  {kicker:'03 / 08 · SQL + Power BI · Featured',title:'Student Contest Analytics System',desc:'A comprehensive analytics platform for ranking students, tracking KPIs, and classifying participation patterns — built on a star schema dimensional model with full Power BI reporting and drill-down capability.',hls:['Designed fact and dimension tables for multi-axis analytical reporting','Built student ranking engine with scoring and classification logic','Created KPI dashboard with interactive drill-down capabilities','Implemented participation segmentation and pattern analysis','Delivered real-time performance monitoring via Power BI'],stack:['SQL','MySQL','Power BI','Data Modeling','Star Schema','DAX','KPI Dashboards'],color:'#081a38'},
-  {kicker:'04 / 08 · Python Analytics',title:'Banking Risk Analytics & Loan Default Analysis',desc:'Credit risk system analyzing loan defaults on 55K rows × 122 columns, with 10+ engineered features and a comparison of Logistic Regression, Decision Tree and Gradient Boosting.',hls:['55K rows × 122 columns analyzed','10+ engineered features','Compared Logistic Regression, Decision Tree and Gradient Boosting','Risk heatmaps and correlation analysis with Seaborn','Statistical reporting with Matplotlib'],stack:['Python','Pandas','NumPy','Matplotlib','Seaborn','Statistical Analysis'],color:'#082018'},
-  {kicker:'05 / 08 · Power BI Dashboard',title:'Formula 1 Championship Analytics Dashboard',desc:'70+ years of Formula 1 history distilled into a comprehensive, interactive Power BI dashboard — revealing constructor dynasties, driver rivalries, race strategies, and era-by-era performance shifts.',hls:['Analyzed 70+ years of F1 championship data across all eras','Constructor dominance trends, dynasty periods and rivalry analytics','Race strategy, pit stop efficiency and tire performance analysis','Complex DAX measures for cumulative championship insights','Cross-era driver performance comparison dashboards'],stack:['Power BI','DAX','Excel','Data Analysis','Data Modeling'],color:'#2e0810'},
-  {kicker:'06 / 08 · Data Engineering',title:'Flight Data Engineering Pipeline',desc:'End-to-end data engineering pipeline processing real airline data — from raw CSV ingestion through structured ETL transformation, data cleansing, optimization, and delivery to operational Power BI dashboards.',hls:['Built complete ETL pipeline with automated data validation','Route performance analytics and airline comparison insights','Delay pattern analysis — by route, carrier, and time-of-day','Star schema modeling for flight data warehouse','Power BI dashboards for operational decision-making'],stack:['SQL','ETL','Power BI','MySQL','Pentaho Spoon','Data Modeling'],color:'#082220'},
-  {kicker:'07 / 08 · Power BI · New',title:'Cryptocurrency Market Analysis Dashboard',desc:'An end-to-end cryptocurrency analytics dashboard built using real-time CoinGecko API data to analyze market trends, volatility, tokenomics, trading volume, market capitalization, and strategic investment insights.',hls:['Real-time CoinGecko API integration via Power Query','Interactive dashboards with market cap & volume analysis','Advanced DAX calculations for volatility metrics','Tokenomics breakdown and distribution analytics','Strategic investment insights and trend identification'],stack:['Power BI','DAX','Power Query','CoinGecko API'],color:'#0f0a1e'},
-  {kicker:'08 / 08 · Power BI · New',title:'Olist E-Commerce Analytics Dashboard',desc:'A complete BI solution using the Brazilian Olist e-commerce dataset — analyzing marketplace operations, customer behavior, seller performance, delivery efficiency, and payment analytics across 100K+ orders.',hls:['Executive Dashboard with high-level business KPIs','Sales analysis with product & category breakdown','Customer analytics — retention, CLV, satisfaction','Delivery analytics — late shipments, carrier performance','Seller performance scoring and payment insights'],stack:['Power BI','Power Query','DAX','Data Modeling'],color:'#0a1a10'}
+  {kicker:'01 / 06 · SQL + Power BI · Featured',title:'Student Contest Analytics System',desc:'A comprehensive analytics platform for ranking students, tracking KPIs, and classifying participation patterns — built on a star schema dimensional model with full Power BI reporting and drill-down capability.',hls:['Designed fact and dimension tables for multi-axis analytical reporting','Built student ranking engine with scoring and classification logic','Created KPI dashboard with interactive drill-down capabilities','Implemented participation segmentation and pattern analysis','Delivered real-time performance monitoring via Power BI'],stack:['SQL','MySQL','Power BI','Data Modeling','Star Schema','DAX','KPI Dashboards'],color:'#081a38'},
+  {kicker:'02 / 06 · Python Analytics',title:'Banking Risk Analytics & Loan Default Analysis',desc:'Credit risk intelligence system analyzing loan defaults, EMI burden, and financial patterns across diverse borrower segments — built entirely on Python\'s data science stack with rich visual storytelling.',hls:['Credit risk segmentation and multi-factor scoring model','EMI burden analysis and loan default prediction insights','Financial pattern analysis across income and loan categories','Risk heatmaps and correlation analysis with Seaborn','Comprehensive statistical reporting with Matplotlib'],stack:['Python','Pandas','NumPy','Matplotlib','Seaborn','Statistical Analysis'],color:'#082018'},
+  {kicker:'03 / 06 · Power BI Dashboard',title:'Formula 1 Championship Analytics Dashboard',desc:'70+ years of Formula 1 history distilled into a comprehensive, interactive Power BI dashboard — revealing constructor dynasties, driver rivalries, race strategies, and era-by-era performance shifts.',hls:['Analyzed 70+ years of F1 championship data across all eras','Constructor dominance trends, dynasty periods and rivalry analytics','Race strategy, pit stop efficiency and tire performance analysis','Complex DAX measures for cumulative championship insights','Cross-era driver performance comparison dashboards'],stack:['Power BI','DAX','Excel','Data Analysis','Data Modeling'],color:'#2e0810'},
+  {kicker:'04 / 06 · Data Engineering',title:'Flight Data Engineering Pipeline',desc:'End-to-end data engineering pipeline processing real airline data — from raw CSV ingestion through structured ETL transformation, data cleansing, optimization, and delivery to operational Power BI dashboards.',hls:['Built complete ETL pipeline with automated data validation','Route performance analytics and airline comparison insights','Delay pattern analysis — by route, carrier, and time-of-day','Star schema modeling for flight data warehouse','Power BI dashboards for operational decision-making'],stack:['SQL','ETL','Power BI','MySQL','Pentaho Spoon','Data Modeling'],color:'#082220'},
+  {kicker:'05 / 06 · Power BI · New',title:'Cryptocurrency Market Analysis Dashboard',desc:'An end-to-end cryptocurrency analytics dashboard built using real-time CoinGecko API data to analyze market trends, volatility, tokenomics, trading volume, market capitalization, and strategic investment insights.',hls:['Real-time CoinGecko API integration via Power Query','Interactive dashboards with market cap & volume analysis','Advanced DAX calculations for volatility metrics','Tokenomics breakdown and distribution analytics','Strategic investment insights and trend identification'],stack:['Power BI','DAX','Power Query','CoinGecko API'],color:'#0f0a1e'},
+  {kicker:'06 / 06 · Power BI · New',title:'Olist E-Commerce Analytics Dashboard',desc:'A complete BI solution using the Brazilian Olist e-commerce dataset — analyzing marketplace operations, customer behavior, seller performance, delivery efficiency, and payment analytics across 100K+ orders.',hls:['Executive Dashboard with high-level business KPIs','Sales analysis with product & category breakdown','Customer analytics — retention, CLV, satisfaction','Delivery analytics — late shipments, carrier performance','Seller performance scoring and payment insights'],stack:['Power BI','Power Query','DAX','Data Modeling'],color:'#0a1a10'}
 ];
 
 // ── PROJECT FILTERS ──────────────────────────────────────
@@ -1492,6 +1505,7 @@ document.querySelectorAll('.pf-btn').forEach(btn=>{
       const cats=(card.dataset.cats||'').split(' ');
       let show=false;
       if(filter==='all') show=true;
+      else if(filter==='ai') show=false; // coming soon
       else show=cats.includes(filter);
       // animate in/out
       card.style.transition='opacity .3s, transform .3s';
@@ -1512,50 +1526,20 @@ const rmObs=new IntersectionObserver(entries=>entries.forEach(e=>{
   }
 }),{threshold:.3});
 document.querySelectorAll('#learning').forEach(el=>rmObs.observe(el));
-const GLYPH=['ML','CAB','SQL','PY','F1','ETL','₿','BI'];
-let lastFocus=null;
 function openModal(i){
   const p=projects[i],o=document.getElementById('modalOverlay');
-  lastFocus=document.activeElement;
   const thumb=document.getElementById('modalThumb');
-  thumb.style.cssText=`background:linear-gradient(135deg,${p.color},${p.color}88);display:flex;align-items:center;justify-content:center;font-family:Outfit,sans-serif;font-size:72px;font-weight:800;color:rgba(255,255,255,.06);letter-spacing:-4px`;
-  thumb.textContent=GLYPH[i];
+  thumb.style.cssText=`background:linear-gradient(135deg,${p.color},${p.color}88);display:flex;align-items:center;justify-content:center;font-family:Syne,sans-serif;font-size:72px;font-weight:800;color:rgba(255,255,255,.06);letter-spacing:-4px`;
+  thumb.textContent=['SQL','PY','F1','ETL'][i];
   document.getElementById('modalKicker').textContent=p.kicker;
   document.getElementById('modalTitle').textContent=p.title;
   document.getElementById('modalDesc').textContent=p.desc;
   document.getElementById('modalHls').innerHTML=p.hls.map(h=>`<div class="modal-hl">${h}</div>`).join('');
   document.getElementById('modalStack').innerHTML=p.stack.map(s=>`<span class="modal-badge">${s}</span>`).join('');
-  const card=document.querySelector(`.pcard[onclick="openModal(${i})"]`);
-  const gh=card&&card.querySelector('.pabtn.gh'),lv=card&&card.querySelector('.pabtn.live');
-  document.getElementById('modalGh').href=gh?gh.href:'https://github.com/Rider-04';
-  const ml=document.getElementById('modalLive');
-  if(lv){ml.href=lv.href;ml.textContent=lv.textContent.trim();ml.style.display='';}else ml.style.display='none';
   o.classList.add('open');document.body.style.overflow='hidden';
-  o.querySelector('.modal-close').focus();
 }
-function closeModal(){
-  document.getElementById('modalOverlay').classList.remove('open');document.body.style.overflow='';
-  if(lastFocus&&lastFocus.focus)lastFocus.focus();lastFocus=null;
-}
-// make project cards keyboard-operable
-document.querySelectorAll('.pcard').forEach(c=>{
-  c.tabIndex=0;
-  c.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target===c){e.preventDefault();c.click();}});
-});
-document.addEventListener('keydown',e=>{
-  const mo=document.getElementById('modalOverlay');
-  if(e.key==='Escape'){
-    if(mo.classList.contains('open'))closeModal();
-    closeRdd();
-    if(typeof mob!=='undefined'&&mob.classList.contains('open')){closeMob();ham.focus();}
-  }else if(e.key==='Tab'&&mo.classList.contains('open')){
-    const f=[...mo.querySelectorAll('a[href],button')].filter(x=>x.offsetParent!==null);
-    if(!f.length)return;
-    const first=f[0],last=f[f.length-1];
-    if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
-    else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
-  }
-});
+function closeModal(){document.getElementById('modalOverlay').classList.remove('open');document.body.style.overflow='';}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
 
 // ── THEME TOGGLE ────────────────────────────────────────
 let light=false;
@@ -1567,70 +1551,68 @@ document.getElementById('themeBtn').addEventListener('click',()=>{
 // ── MOBILE MENU + HAMBURGER ANIMATION ───────────────────
 const mob=document.getElementById('mob');
 const ham=document.getElementById('hamburger');
-function setMob(o){mob.classList.toggle('open',o);ham.classList.toggle('open',o);ham.setAttribute('aria-expanded',String(o));}
-ham.addEventListener('click',()=>setMob(true));
-document.getElementById('mobClose').addEventListener('click',()=>{setMob(false);ham.focus();});
-function closeMob(){setMob(false);}
+ham.addEventListener('click',()=>{mob.classList.add('open');ham.classList.add('open');});
+document.getElementById('mobClose').addEventListener('click',()=>{mob.classList.remove('open');ham.classList.remove('open');});
+function closeMob(){mob.classList.remove('open');ham.classList.remove('open');}
 
 // ── CONTACT FORM ────────────────────────────────────────
-let sending=false;
-function setStatus(msg,type){const el=document.getElementById('formStatus');el.textContent=msg;el.className='form-status'+(type?' '+type:'');}
 function handleSubmit(btn){
-  if(sending)return;
   const name    = document.getElementById('from_name').value.trim();
   const email   = document.getElementById('from_email').value.trim();
   const subject = document.getElementById('subject').value.trim();
   const message = document.getElementById('message').value.trim();
-  const trap    = document.getElementById('website').value;
-  if(!name||!email||!message){setStatus('Please fill in your name, email and message.','err');return;}
-  if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)){setStatus('Enter a valid email address, like name@example.com.','err');document.getElementById('from_email').focus();return;}
-  if(trap){setStatus('Message sent. Thank you!','ok');return;} // honeypot: bots only
-  sending=true;
+  if(!name||!email||!message){alert('Please fill in all required fields.');return;}
   const orig=btn.innerHTML;
   btn.innerHTML='<span>Sending...</span><span style="display:inline-block;animation:spin 1s linear infinite">⟳</span>';
   btn.disabled=true;
-  setStatus('Sending…','');
-  const reset=()=>{btn.innerHTML=orig;btn.disabled=false;btn.style.background='';btn.style.boxShadow='';sending=false;};
   // Save to Google Sheets
   fetch('https://script.google.com/macros/s/AKfycbzhtrSb2Eq5ORfNvyUjpuFsA7tS6ORHtG_5BbtwYVFKMxIrr0yD7sErJBpuM1LSq_I6/exec',{
     method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},
     body:JSON.stringify({name,email,subject,message})
-  }).catch(()=>{});
+  });
   // Send via EmailJS
-  let p;
-  try{p=emailjs.send('service_7mboe22','template_8ph28uj',{from_name:name,from_email:email,subject,message});}
-  catch(err){p=Promise.reject(err);}
-  p.then(()=>{
+  emailjs.send('service_7mboe22','template_8ph28uj',{from_name:name,from_email:email,subject,message})
+  .then(()=>{
     btn.innerHTML='<span>Message Sent! ✓</span>';
     btn.style.background='linear-gradient(135deg,#10b981,#059669)';
     btn.style.boxShadow='0 8px 32px rgba(16,185,129,.35)';
-    setStatus('Message sent. Thank you, I will get back to you soon.','ok');
-    ['from_name','from_email','subject','message'].forEach(id=>document.getElementById(id).value='');
-    setTimeout(reset,3000);
+    document.getElementById('from_name').value='';
+    document.getElementById('from_email').value='';
+    document.getElementById('subject').value='';
+    document.getElementById('message').value='';
+    setTimeout(()=>{btn.innerHTML=orig;btn.disabled=false;btn.style.background='';btn.style.boxShadow='';},3000);
   })
   .catch(err=>{
     console.error('EmailJS error:',err);
-    setStatus('The message could not be sent. Try again, or email sharmaparthsharma04@gmail.com directly.','err');
-    reset();
+    btn.innerHTML='<span>Failed. Try again.</span>';
+    btn.style.background='linear-gradient(135deg,#ef4444,#dc2626)';
+    setTimeout(()=>{btn.innerHTML=orig;btn.disabled=false;btn.style.background='';},3000);
   });
 }
 
-// ── RESUME DROPDOWNS ────────────────────────────────────
-function closeRdd(except){
-  document.querySelectorAll('.rdd.open').forEach(d=>{if(d!==except){d.classList.remove('open');d.querySelector('.rdd-btn').setAttribute('aria-expanded','false');}});
-}
-document.querySelectorAll('.rdd').forEach(d=>{
-  const b=d.querySelector('.rdd-btn');
-  b.addEventListener('click',e=>{
-    e.stopPropagation();
-    const open=!d.classList.contains('open');
-    closeRdd(d);
-    d.classList.toggle('open',open);
-    b.setAttribute('aria-expanded',String(open));
-  });
-  d.addEventListener('click',e=>e.stopPropagation());
-});
-document.addEventListener('click',()=>closeRdd());
+// ── HERO MINI SPARKLINE (canvas) ────────────────────────
+(function(){
+  const canvas=document.getElementById('heroSparkline');
+  if(!canvas)return;
+  const c=canvas.getContext('2d');
+  const data=[30,45,35,60,55,72,65,80,75,88,82,92];
+  const W2=canvas.width,H2=canvas.height;
+  const max=Math.max(...data),min=Math.min(...data);
+  const pts2=data.map((v,i)=>({x:i/(data.length-1)*W2,y:H2-(v-min)/(max-min)*H2*.85-H2*.08}));
+  // gradient fill
+  const grad=c.createLinearGradient(0,0,0,H2);
+  grad.addColorStop(0,'rgba(96,165,250,.3)');grad.addColorStop(1,'rgba(96,165,250,0)');
+  c.beginPath();c.moveTo(pts2[0].x,H2);
+  pts2.forEach(p=>c.lineTo(p.x,p.y));
+  c.lineTo(W2,H2);c.closePath();c.fillStyle=grad;c.fill();
+  // line
+  c.beginPath();c.moveTo(pts2[0].x,pts2[0].y);
+  pts2.forEach(p=>c.lineTo(p.x,p.y));
+  c.strokeStyle='rgba(96,165,250,.8)';c.lineWidth=1.5;c.lineJoin='round';c.stroke();
+  // dot on last point
+  c.beginPath();c.arc(pts2[pts2.length-1].x,pts2[pts2.length-1].y,3,0,Math.PI*2);
+  c.fillStyle='#22d3ee';c.fill();
+})();
 </script>
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script>emailjs.init('1z1Qf5n5m2Bhv6OR8');</script>
